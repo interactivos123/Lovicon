@@ -3,7 +3,7 @@ import { Button } from '@material-ui/core'
 import { theme } from '../../theme'
 
 export const MyButtonMenu = styled(Button)({
-  fontSize: '14px',
+  fontSize: '16px',
   marginLeft: '15px',
   padding: '0px',
   '& a': {
@@ -14,15 +14,17 @@ export const MyButtonMenu = styled(Button)({
     textDecoration: 'none',
     fontWeight: '500'
   },
+
   '&:hover a': {
-    background: theme.palette.secondary.main,
+    background: theme.palette.primary.main,
     color: '#fff',
     textDecoration: 'none'
   },
   '& a.active': {
-    background: theme.palette.secondary.main,
+    background: theme.palette.primary.main,
     color: '#fff',
-    textDecoration: 'none'
+    textDecoration: 'none',
+    position: 'relative'
   },
   [theme.breakpoints.down('sm')]: {
     justifyContent: 'flex-start',

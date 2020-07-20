@@ -4,13 +4,13 @@ import { theme } from '../../theme'
 
 export const MyAppBar = styled(AppBar)({
   background: 'transparent',
-  padding: '10px 0',
-  height: '84px',
+  padding: '10px 40px',
+  height: '100px',
   transition: '.3s',
   justifyContent: 'center',
   boxShadow: 'none',
   '& .gatsby-image-wrapper': {
-    width: '200px',
+    width: '180px',
     transition: '.3s'
   },
   '&.sticky': {
@@ -27,7 +27,6 @@ export const MyAppBar = styled(AppBar)({
 
 export const MyToolbar = styled(Toolbar)({
   width: '100%',
-  maxWidth: '1140px',
   margin: '0 auto',
   padding: 0,
   minHeight: '0px',
