@@ -7,17 +7,20 @@ export const MyButtonMenu = styled(Button)({
   marginLeft: '15px',
   padding: '0px',
   '& a': {
+    color: theme.palette.text.primary,
     padding: '2px 12px',
     borderRadius: '50px',
-    transition: '.3s'
+    transition: '.3s',
+    textDecoration: 'none',
+    fontWeight: '500'
   },
   '&:hover a': {
-    background: theme.palette.primary.main,
+    background: theme.palette.secondary.main,
     color: '#fff',
     textDecoration: 'none'
   },
   '& a.active': {
-    background: theme.palette.primary.main,
+    background: theme.palette.secondary.main,
     color: '#fff',
     textDecoration: 'none'
   },

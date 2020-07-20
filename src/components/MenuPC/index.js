@@ -1,14 +1,12 @@
 import React, { useEffect } from 'react'
-import { Grid, Hidden } from '@material-ui/core'
+import { Grid } from '@material-ui/core'
 import Image from '../image'
 import { Menu } from '@material-ui/icons'
 import { Link } from 'gatsby'
 import { ListaMenu } from '../ListaMenu'
-import { RedesSociales } from '../RedesSociales'
 import {
   MyAppBar,
   MyToolbar,
-  MyContainerSocials,
   MyIconButton,
   MyContainerMenu,
   MyContainerIconMenuResponsive
@@ -17,15 +15,12 @@ import {
 export const MenuPC = (props) => {
   useEffect(() => {
     const navbar = document.getElementById('header')
-    const socials = document.querySelector('#container-socials')
     window.onscroll = function () {
       if (window.pageYOffset >= 1) {
         navbar.classList.add('sticky')
-        socials.classList.add('sticky')
         console.log('social')
       } else {
         navbar.classList.remove('sticky')
-        socials.classList.remove('sticky')
       }
     }
   })
@@ -37,15 +32,11 @@ export const MenuPC = (props) => {
 
           <Grid item xs={4}>
             <Link to='/'>
-              <Image name='logo.png' />
+              <Image name='LogoLovicon.png' />
             </Link>
           </Grid>
 
           <Grid item xs={8}>
-
-            <MyContainerSocials container justify='flex-end' id='container-socials'>
-              <RedesSociales />
-            </MyContainerSocials>
 
             <MyContainerMenu container justify='flex-end'>
               <ListaMenu />

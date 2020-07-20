@@ -8,8 +8,9 @@ export const MyAppBar = styled(AppBar)({
   height: '84px',
   transition: '.3s',
   justifyContent: 'center',
+  boxShadow: 'none',
   '& .gatsby-image-wrapper': {
-    width: '250px',
+    width: '200px',
     transition: '.3s'
   },
   '&.sticky': {
@@ -17,7 +18,7 @@ export const MyAppBar = styled(AppBar)({
     height: '60px'
   },
   '&.sticky .gatsby-image-wrapper': {
-    width: '200px'
+    width: '140px'
   },
   [theme.breakpoints.down('md')]: {
     padding: '0 30px'

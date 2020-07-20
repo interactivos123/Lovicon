@@ -3,19 +3,19 @@ import { createMuiTheme } from '@material-ui/core/styles'
 export const theme = createMuiTheme({
   palette: {
     primary: {
-      main: '#123657',
+      main: '#000',
       contrastText: '#fff'
     },
     secondary: {
-      main: '#0098db',
+      main: '#ED7365',
       contrastText: '#fff'
     },
     text: {
-      primary: '#555'
+      primary: '#000'
     }
   },
   typography: {
-    fontFamily: ['Open Sans', '-apple-system'].join(','),
+    fontFamily: ['Nunito Sans', '-apple-system'].join(','),
     h1: {
       fontSize: 40,
       fontWeight: 700

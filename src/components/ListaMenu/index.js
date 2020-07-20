@@ -9,13 +9,19 @@ export const ListaMenu = (props) => {
         <Link to='/' activeClassName='active'>Inicio</Link>
       </MyButtonMenu>
       <MyButtonMenu onClick={() => props.handleOpen ? props.handleOpen() : null}>
-        <Link to='/sobreNosotros' activeClassName='active'>Nosotros</Link>
+        <Link to='/sobre-nosotros' activeClassName='active'>Sobre Nosotros</Link>
       </MyButtonMenu>
       <MyButtonMenu onClick={() => props.handleOpen ? props.handleOpen() : null}>
-        <Link to='/blog' activeClassName='active'>Blog</Link>
+        <Link to='/productos-y-servicios' activeClassName='active'>Productos y Servicios</Link>
       </MyButtonMenu>
       <MyButtonMenu onClick={() => props.handleOpen ? props.handleOpen() : null}>
-        <Link to='/contacto' activeClassName='active'>Contacto</Link>
+        <Link to='/paquetes' activeClassName='active'>Paquetes</Link>
+      </MyButtonMenu>
+      <MyButtonMenu onClick={() => props.handleOpen ? props.handleOpen() : null}>
+        <Link to='/experiencia' activeClassName='active'>Experiencia</Link>
+      </MyButtonMenu>
+      <MyButtonMenu onClick={() => props.handleOpen ? props.handleOpen() : null}>
+        <Link to='/contactenos' activeClassName='active'>Contáctenos</Link>
       </MyButtonMenu>
     </>
   )
