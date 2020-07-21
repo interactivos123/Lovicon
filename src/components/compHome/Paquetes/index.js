@@ -7,7 +7,7 @@ import { Target } from './Target'
 export const Paquetes = () => {
   return (
     <ContenedorPadre>
-      <Box py={5}>
+      <Box pt={10}>
         <Grid container>
           <Grid item sm={3}>
             <Target
