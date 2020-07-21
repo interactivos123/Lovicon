@@ -41,12 +41,14 @@ export const theme = createMuiTheme({
       fontWeight: 700
     },
     subtitle1: {
-      fontSize: 24,
-      fontWeight: 700
+      fontSize: 56,
+      fontWeight: 800,
+      lineHeight: '1'
     },
     subtitle2: {
-      fontSize: 24,
-      fontWeight: 700
+      fontSize: 40,
+      fontWeight: 600,
+      lineHeight: '1'
     },
     body1: {
       fontSize: 16,
@@ -54,7 +56,7 @@ export const theme = createMuiTheme({
     },
     body2: {
       fontSize: 18,
-      fontWeight: 700
+      fontWeight: 400
     },
     button: {
       fontSize: 18,
@@ -66,6 +68,14 @@ export const theme = createMuiTheme({
     MuiButton: {
       root: {
         borderRadius: 25
+      },
+      outlinedPrimary: {
+        borderWidth: 2,
+        borderColor: '#000',
+        '&:hover': {
+          borderWidth: 2,
+          borderColor: '#000'
+        }
       }
     }
   }

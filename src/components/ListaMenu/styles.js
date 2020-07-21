@@ -14,17 +14,25 @@ export const MyButtonMenu = styled(Button)({
     textDecoration: 'none',
     fontWeight: '500'
   },
-
-  '&:hover a': {
-    background: theme.palette.primary.main,
-    color: '#fff',
-    textDecoration: 'none'
-  },
   '& a.active': {
-    background: theme.palette.primary.main,
-    color: '#fff',
     textDecoration: 'none',
-    position: 'relative'
+    position: 'relative',
+    marginLeft: 20
+  },
+  '& a:before': {
+    content: '\'\'',
+    width: 0,
+    height: 2,
+    position: 'absolute',
+    backgroundColor: '#000',
+    top: 15,
+    left: -14,
+    transition: '.3s',
+    marginLeft: 20
+  },
+  '& a.active:before': {
+    width: 20,
+    marginLeft: 0
   },
   [theme.breakpoints.down('sm')]: {
     justifyContent: 'flex-start',

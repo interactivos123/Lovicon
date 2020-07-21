@@ -1,5 +1,5 @@
 import { styled } from '@material-ui/styles'
-import { Grid } from '@material-ui/core'
+import { Grid, Typography } from '@material-ui/core'
 
 export const Container = styled(Grid)({
   background: 'transparent',
@@ -17,8 +17,13 @@ export const Container = styled(Grid)({
 })
 
 export const Content = styled(Grid)({
-  padding: '80px 40px',
+  height: 'calc(100% - 60px)',
   display: 'flex',
   flexDirection: 'column',
-  justifyContent: 'center'
+  justifyContent: 'center',
+  padding: '0 40px'
+})
+
+export const TextBanner = styled(Typography)({
+  padding: '20px 0px'
 })
