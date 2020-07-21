@@ -9,6 +9,7 @@ import { Slide3 } from '../components/Slides/Slide3'
 import { Construyendo } from '../components/compHome/Construyendo'
 import { RetailNumeros } from '../components/compHome/RetailNumeros'
 import { RetailRenovacion } from '../components/compHome/RetailRenovacion'
+import { ProductosYServicios } from '../components/compHome/ProductosYServicios'
 
 SwiperCore.use([Pagination])
 
@@ -29,6 +30,7 @@ const Inicio = () => {
       <Construyendo />
       <RetailNumeros />
       <RetailRenovacion />
+      <ProductosYServicios />
     </>
   )
 }
