@@ -6,7 +6,9 @@ import SwiperStyles from 'swiper/swiper-bundle.min.css'
 import { Slide1 } from '../components/Slides/Slide1'
 import { Slide2 } from '../components/Slides/Slide2'
 import { Slide3 } from '../components/Slides/Slide3'
-import { LinkButton } from '../components/generals/Link'
+import { Construyendo } from '../components/compHome/Construyendo'
+import { RetailNumeros } from '../components/compHome/RetailNumeros'
+import { RetailRenovacion } from '../components/compHome/RetailRenovacion'
 
 SwiperCore.use([Pagination])
 
@@ -24,7 +26,9 @@ const Inicio = () => {
         <SwiperSlide><Slide2 /></SwiperSlide>
         <SwiperSlide><Slide3 /></SwiperSlide>
       </Swiper>
-      <LinkButton to='hola' variant='contained' color='primary'>Hola</LinkButton>
+      <Construyendo />
+      <RetailNumeros />
+      <RetailRenovacion />
     </>
   )
 }
