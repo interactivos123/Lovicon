@@ -28,7 +28,7 @@ export const theme = createMuiTheme({
       fontWeight: 700
     },
     h3: {
-      fontSize: 24,
+      fontSize: 28,
       fontWeight: 700
     },
     h4: {
@@ -83,6 +83,11 @@ export const theme = createMuiTheme({
           padding: '5px 25px',
           background: '#000 !important'
         }
+      }
+    },
+    MuiListItemIcon: {
+      root: {
+        minWidth: 32
       }
     }
   }
