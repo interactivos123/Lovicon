@@ -4,7 +4,7 @@ import { Slider } from '../components/compHome/Slider'
 import { Construyendo } from '../components/compHome/Construyendo'
 import { RetailNumeros } from '../components/compHome/RetailNumeros'
 import { RetailRenovacion } from '../components/compHome/RetailRenovacion'
-import { Paquetes } from '../components/compHome/Paquetes'
+import { PaquetesComp } from '../components/compHome/Paquetes'
 import { ProductosYServicios } from '../components/compHome/ProductosYServicios'
 import { Equipo } from '../components/compHome/Equipo'
 
@@ -18,7 +18,7 @@ const Inicio = () => {
       <Equipo />
       <RetailRenovacion />
       <ProductosYServicios />
-      <Paquetes />
+      <PaquetesComp />
     </>
   )
 }

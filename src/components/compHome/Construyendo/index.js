@@ -9,13 +9,15 @@ import { MyTypography, MyBoxBackground } from './styles'
 export const Construyendo = () => {
   return (
     <MyBoxBackground>
-      <ContenedorPadre mt={15}>
-        <Grid container spacing={7}>
-          <Grid item md={5}>
+      <ContenedorPadre mt={{ xs: 5, md: 10, lg: 15 }}>
+        <Grid container>
+
+          <Grid item xs={10} sm={8} md={5}>
             <Image name='construyendoTiendas.png' />
           </Grid>
-          <Grid item md={7}>
-            <Box mt={10}>
+
+          <Grid item xs={12} md={7}>
+            <Box mt={{ xs: 2, lg: 10 }}>
               <Grid container spacing={1}>
                 <Grid item md={2}>
                   <LineaHorizontal />

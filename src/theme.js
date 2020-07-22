@@ -130,7 +130,11 @@ export const LineaHorizontal = styled('div')({
   height: '3px',
   background: theme.palette.primary.main,
   margin: '25px 10px 0 0',
-  float: 'right'
+  float: 'right',
+  [theme.breakpoints.down('md')]: {
+    width: '50px',
+    margin: '25px 10px 0 0'
+  }
 })
 
 export const LineaHorizontalBlanca = styled('div')({
@@ -143,5 +147,11 @@ export const LineaHorizontalBlanca = styled('div')({
 
 export const ContenedorPadre = styled(Box)({
   padding: '0 80px',
-  position: 'relative'
+  position: 'relative',
+  [theme.breakpoints.down('sm')]: {
+    padding: '0 30px'
+  },
+  [theme.breakpoints.down('xs')]: {
+    padding: '0 20px'
+  }
 })

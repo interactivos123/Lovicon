@@ -5,15 +5,16 @@ import { Check } from '@material-ui/icons'
 import { Target } from './Target'
 import { Background } from './styles'
 
-export const Paquetes = () => {
+export const PaquetesComp = ({ noTitulo }) => {
   return (
     <Background>
       <ContenedorPadre>
         <Box pt={15}>
-          <Box pb={5} display='flex' justifyContent='center'>
-            <LineaHorizontal />
-            <Typography variant='h1' color='primary'>Paquetes de Inversión</Typography>
-          </Box>
+          {!noTitulo &&
+            <Box pb={5} display='flex' justifyContent='center'>
+              <LineaHorizontal />
+              <Typography variant='h1' color='primary'>Paquetes de Inversión</Typography>
+            </Box>}
           <Grid container>
             <Grid item sm={3}>
               <Target

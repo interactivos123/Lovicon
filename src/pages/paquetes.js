@@ -1,11 +1,11 @@
 import React from 'react'
 import { Cabecera } from '../components/generals/Cabecera'
-import { Vacio } from '../components/generals/Vacio'
+import { PaquetesComp } from '../components/compHome/Paquetes'
 export const Paquetes = () => {
   return (
     <>
       <Cabecera title='Paquetes' />
-      <Vacio />
+      <PaquetesComp noTitulo />
     </>
   )
 }
