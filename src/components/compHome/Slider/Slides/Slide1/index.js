@@ -9,7 +9,7 @@ import { LineaHorizontal } from '../../../../../theme'
 export const Slide1 = () => {
   return (
     <Container container alignItems='flex-end'>
-      <Content item md={5} xl={5}>
+      <Content item xs={12} md={5} xl={5}>
         <Grid container>
           <Grid item md={2}>
             <LineaHorizontal />
@@ -31,10 +31,9 @@ export const Slide1 = () => {
           </Grid>
         </Grid>
       </Content>
-      <Grid item md={7} xl={7}>
+      <Grid item xs={12} md={7} xl={7}>
         <Image name='imageBanner1.png' />
       </Grid>
-
     </Container>
   )
 }

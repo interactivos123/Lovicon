@@ -96,6 +96,35 @@ export const theme = createMuiTheme({
   }
 })
 
+theme.typography.subtitle1 = {
+  fontFamily: ['Nunito Sans', '-apple-system'].join(','),
+  fontSize: 56,
+  fontWeight: 800,
+  lineHeight: '1',
+  [theme.breakpoints.down('xs')]: {
+    fontSize: 22
+  }
+}
+
+theme.typography.subtitle2 = {
+  fontFamily: ['Nunito Sans', '-apple-system'].join(','),
+  fontSize: 40,
+  fontWeight: 600,
+  lineHeight: '1',
+  [theme.breakpoints.down('xs')]: {
+    fontSize: 18
+  }
+}
+
+theme.typography.body2 = {
+  fontFamily: ['Nunito Sans', '-apple-system'].join(','),
+  fontSize: 18,
+  fontWeight: 400,
+  [theme.breakpoints.down('xs')]: {
+    fontSize: 14
+  }
+}
+
 export const LineaHorizontal = styled('div')({
   width: '70px',
   height: '3px',
