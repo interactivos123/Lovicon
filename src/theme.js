@@ -138,7 +138,11 @@ export const LineaHorizontalBlanca = styled('div')({
   height: '3px',
   background: '#fff',
   margin: '11px 10px 0 0',
-  float: 'right'
+  float: 'right',
+  [theme.breakpoints.down('xs')]: {
+    width: 20,
+    height: 2
+  }
 })
 
 export const ContenedorPadre = styled(Box)({
