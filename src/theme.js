@@ -15,6 +15,9 @@ export const theme = createMuiTheme({
     text: {
       primary: '#000',
       secondary: '#fff'
+    },
+    background: {
+      default: '#fff'
     }
   },
   typography: {
@@ -110,5 +113,6 @@ export const LineaHorizontalBlanca = styled('div')({
 })
 
 export const ContenedorPadre = styled(Box)({
-  padding: '0 80px'
+  padding: '0 80px',
+  position: 'relative'
 })

@@ -11,5 +11,6 @@ export const MyBoxBackground = styled(Box)({
   backgroundImage: `url(${Rectangulo})`,
   backgroundRepeat: 'no-repeat',
   backgroundSize: 'initial',
-  backgroundPosition: 'top right'
+  backgroundPosition: 'top right',
+  minHeight: 507
 })
