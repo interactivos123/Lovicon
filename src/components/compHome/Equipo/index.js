@@ -2,14 +2,14 @@ import React from 'react'
 import Image from '../../image'
 import { ContenedorPadre, LineaHorizontal } from '../../../theme'
 import { Grid, Box, Typography } from '@material-ui/core'
-import { MyBox, ContainerProduct } from './style'
+import { MyBox, ContainerProduct, GridColumn1 } from './style'
 export const Equipo = () => {
   return (
     <ContenedorPadre>
       <Box my={15}>
         <Grid container alignItems='center'>
 
-          <Grid item lg={6} md={12}>
+          <GridColumn1 item lg={6} md={12}>
             <Grid container>
 
               <Grid lg={3} md={1}>
@@ -28,7 +28,7 @@ export const Equipo = () => {
               </Grid>
 
             </Grid>
-          </Grid>
+          </GridColumn1>
 
           <Grid item lg={6} md={12}>
 

@@ -1,5 +1,5 @@
 import { styled } from '@material-ui/styles'
-import { Box } from '@material-ui/core'
+import { Box, Grid } from '@material-ui/core'
 import { theme } from '../../../theme'
 
 export const MyBox = styled(Box)({
@@ -26,4 +26,8 @@ export const ContainerProduct = styled(Box)({
   '& h4': {
     marginTop: '15px'
   }
+})
+
+export const GridColumn1 = styled(Grid)({
+
 })
