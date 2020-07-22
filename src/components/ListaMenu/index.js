@@ -5,22 +5,19 @@ import { MyButtonMenu } from './styles'
 export const ListaMenu = (props) => {
   return (
     <>
-      <MyButtonMenu onClick={() => props.handleOpen ? props.handleOpen() : null}>
+      <MyButtonMenu onClick={() => props.handleOpen ? props.handleOpen() : null} footer={props.footer}>
         <Link to='/' activeClassName='active'>Inicio</Link>
       </MyButtonMenu>
-      <MyButtonMenu onClick={() => props.handleOpen ? props.handleOpen() : null}>
-        <Link to='/sobre-nosotros' activeClassName='active'>Sobre Nosotros</Link>
-      </MyButtonMenu>
-      <MyButtonMenu onClick={() => props.handleOpen ? props.handleOpen() : null}>
+      <MyButtonMenu onClick={() => props.handleOpen ? props.handleOpen() : null} footer={props.footer}>
         <Link to='/productos-y-servicios' activeClassName='active'>Productos y Servicios</Link>
       </MyButtonMenu>
-      <MyButtonMenu onClick={() => props.handleOpen ? props.handleOpen() : null}>
+      <MyButtonMenu onClick={() => props.handleOpen ? props.handleOpen() : null} footer={props.footer}>
         <Link to='/paquetes' activeClassName='active'>Paquetes</Link>
       </MyButtonMenu>
-      <MyButtonMenu onClick={() => props.handleOpen ? props.handleOpen() : null}>
-        <Link to='/experiencia' activeClassName='active'>Experiencia</Link>
+      <MyButtonMenu onClick={() => props.handleOpen ? props.handleOpen() : null} footer={props.footer}>
+        <Link to='/tienda-virtual' activeClassName='active'>Tienda Virtual</Link>
       </MyButtonMenu>
-      <MyButtonMenu onClick={() => props.handleOpen ? props.handleOpen() : null}>
+      <MyButtonMenu onClick={() => props.handleOpen ? props.handleOpen() : null} footer={props.footer}>
         <Link to='/contactenos' activeClassName='active'>Contáctenos</Link>
       </MyButtonMenu>
     </>
