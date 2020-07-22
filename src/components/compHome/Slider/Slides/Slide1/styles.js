@@ -14,7 +14,7 @@ export const Container = styled(Grid)({
   },
   '& .gatsby-image-wrapper img': {
     objectFit: 'contain!important',
-    objectPosition: 'bottom!important'
+    objectPosition: 'bottom right!important'
   }
 })
 
@@ -27,8 +27,23 @@ export const Content = styled(Grid)({
   backgroundImage: `url(${BgSlider})`,
   backgroundRepeat: 'no-repeat',
   backgroundPosition: '18% 16%',
-  [theme.breakpoints.down('md')]: {
-    height: 'auto'
+  [theme.breakpoints.down('xs')]: {
+    height: '60%',
+    justifyContent: 'flex-end',
+    padding: '0 20px 20px 20px',
+    backgroundPosition: '15% 40%'
+  }
+})
+
+export const ContentImage = styled(Grid)({
+  [theme.breakpoints.down('xs')]: {
+    height: '40%'
+  }
+})
+
+export const GridLineText = styled(Grid)({
+  [theme.breakpoints.down('xs')]: {
+    marginTop: 50
   }
 })
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Content, TextBanner } from './styles'
+import { Container, Content, TextBanner, ContentImage } from './styles'
 import Image from '../../../../image'
 import { Grid, Typography } from '@material-ui/core'
 import { LinkButton } from '../../../../generals/Link'
@@ -8,13 +8,13 @@ import { LineaHorizontal } from '../../../../../theme'
 
 export const Slide1 = () => {
   return (
-    <Container container alignItems='flex-end'>
-      <Content item xs={12} md={5} xl={5}>
+    <Container container alignItems='flex-end' justify='flex-end'>
+      <Content item xs={12} sm={5} md={5} xl={5}>
         <Grid container>
-          <Grid item md={2}>
+          <Grid item xs={1} md={2}>
             <LineaHorizontal />
           </Grid>
-          <Grid item md={10}>
+          <Grid item xs={11} md={10}>
             <Typography variant='subtitle2'>La tienda física es el espacio</Typography>
             <Typography variant='subtitle1'>donde se construye el valor de la marca</Typography>
             <TextBanner variant='body2'>
@@ -26,14 +26,14 @@ export const Slide1 = () => {
               variant='outlined'
               color='primary'
             >
-            Arquitectura
+              Arquitectura
             </LinkButton>
           </Grid>
         </Grid>
       </Content>
-      <Grid item xs={12} md={7} xl={7}>
+      <ContentImage item xs={12} sm={7} md={7} xl={7}>
         <Image name='imageBanner1.png' />
-      </Grid>
+      </ContentImage>
     </Container>
   )
 }
