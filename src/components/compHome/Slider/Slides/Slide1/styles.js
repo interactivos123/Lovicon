@@ -1,6 +1,7 @@
 import { styled } from '@material-ui/styles'
 import { Grid, Typography } from '@material-ui/core'
 import BgSlider from '../../../../../images/BG-Slider.png'
+import { theme } from '../../../../../theme'
 
 export const Container = styled(Grid)({
   background: 'transparent',
@@ -25,9 +26,15 @@ export const Content = styled(Grid)({
   padding: '0 40px',
   backgroundImage: `url(${BgSlider})`,
   backgroundRepeat: 'no-repeat',
-  backgroundPosition: '18% 16%'
+  backgroundPosition: '18% 16%',
+  [theme.breakpoints.down('md')]: {
+    height: 'auto'
+  }
 })
 
 export const TextBanner = styled(Typography)({
-  padding: '30px 0px'
+  padding: '30px 0px',
+  [theme.breakpoints.down('xs')]: {
+    padding: '20px 0px'
+  }
 })

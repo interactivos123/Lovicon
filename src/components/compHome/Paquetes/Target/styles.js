@@ -1,5 +1,10 @@
 import { styled } from '@material-ui/core/styles'
-import { Typography } from '@material-ui/core'
+import { Typography, Box } from '@material-ui/core'
+
+export const Background = styled(Box)({
+  backgroundColor: '#fff'
+})
+
 export const Separador = styled('div')({
   width: '90%',
   height: 2,
