@@ -9,14 +9,14 @@ export const RetailRenovacion = () => {
       <ContenedorPadre my={10}>
         <Grid container spacing={10} alignItems='center'>
 
-          <MyGreenBgFigure item md={6}>
+          <MyGreenBgFigure xs={12} item md={6}>
             <Grid container spacing={1}>
 
-              <Grid item md={4}>
+              <Grid item xs={1} md={4}>
                 <LineaHorizontal />
               </Grid>
 
-              <Grid item md={8}>
+              <Grid item xs={11} md={8}>
                 <Typography variant='subtitle2'>El retail en constante</Typography>
                 <Typography variant='subtitle1'>renovación</Typography>
                 <MyTypography variant='body1'>
@@ -28,7 +28,7 @@ export const RetailRenovacion = () => {
             </Grid>
           </MyGreenBgFigure>
 
-          <Grid item md={6}>
+          <Grid item xs={12} md={6}>
             <Typography variant='subtitle2'>Equipo de especialistas</Typography>
             <MyTypography variant='body1'>
               Contamos con un equipo de arquitectos, ingenieros, diseñadores y mercadólogos que nos dan la seguridad de
@@ -37,8 +37,8 @@ export const RetailRenovacion = () => {
             <Box pt={10}>
               <Typography variant='subtitle2'>Innovación</Typography>
               <MyTypography variant='body1'>
-              Estamos en constante capacitación para aplicar materiales de últimas tendencias, ecológicos y sostenibles
-              que generen valor agregado al proyecto.
+                Estamos en constante capacitación para aplicar materiales de últimas tendencias, ecológicos y sostenibles
+                que generen valor agregado al proyecto.
               </MyTypography>
             </Box>
           </Grid>

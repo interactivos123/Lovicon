@@ -101,8 +101,11 @@ theme.typography.subtitle1 = {
   fontSize: 56,
   fontWeight: 800,
   lineHeight: '1',
+  [theme.breakpoints.down('sm')]: {
+    fontSize: 32
+  },
   [theme.breakpoints.down('xs')]: {
-    fontSize: 22
+    fontSize: 24
   }
 }
 
@@ -111,8 +114,11 @@ theme.typography.subtitle2 = {
   fontSize: 40,
   fontWeight: 600,
   lineHeight: '1',
+  [theme.breakpoints.down('sm')]: {
+    fontSize: 28
+  },
   [theme.breakpoints.down('xs')]: {
-    fontSize: 18
+    fontSize: 22
   }
 }
 
@@ -121,7 +127,7 @@ theme.typography.body2 = {
   fontSize: 18,
   fontWeight: 400,
   [theme.breakpoints.down('xs')]: {
-    fontSize: 14
+    fontSize: 16
   }
 }
 
@@ -134,6 +140,10 @@ export const LineaHorizontal = styled('div')({
   [theme.breakpoints.down('md')]: {
     width: '50px',
     margin: '25px 10px 0 0'
+  [theme.breakpoints.down('xs')]: {
+    margin: '10px 10px 0 0',
+    width: 20,
+    height: 2
   }
 })
 
@@ -142,7 +152,11 @@ export const LineaHorizontalBlanca = styled('div')({
   height: '3px',
   background: '#fff',
   margin: '11px 10px 0 0',
-  float: 'right'
+  float: 'right',
+  [theme.breakpoints.down('xs')]: {
+    width: 20,
+    height: 2
+  }
 })
 
 export const ContenedorPadre = styled(Box)({
