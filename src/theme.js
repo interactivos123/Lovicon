@@ -140,6 +140,7 @@ export const LineaHorizontal = styled('div')({
   [theme.breakpoints.down('md')]: {
     width: '50px',
     margin: '25px 10px 0 0'
+  }
   [theme.breakpoints.down('xs')]: {
     margin: '10px 10px 0 0',
     width: 20,
