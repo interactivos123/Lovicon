@@ -15,9 +15,12 @@ export const Slide1 = () => {
             <LineaHorizontal />
           </Grid>
           <Grid item md={10}>
-            <Typography variant='subtitle2'>Arquitectura y</Typography>
-            <Typography variant='subtitle1'>Construcción</Typography>
-            <TextBanner variant='body2'>La arquitectura comercial se ha convertido en una sofisticada estrategia de marketing.</TextBanner>
+            <Typography variant='subtitle2'>La tienda física es el espacio</Typography>
+            <Typography variant='subtitle1'>donde se construye el valor de la marca</Typography>
+            <TextBanner variant='body2'>
+              Ayudamos a las marcas a incrementar sus canales de venta físicos, construyendo tiendas espectaculares
+              donde sus clientes puedan tocar, oler, sentir y probar sus productos.
+            </TextBanner>
             <LinkButton
               endIcon={<NavigateNext />}
               variant='outlined'

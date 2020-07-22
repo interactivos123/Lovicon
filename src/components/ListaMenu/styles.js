@@ -1,8 +1,9 @@
+import React from 'react'
 import { styled } from '@material-ui/core/styles'
 import { Button } from '@material-ui/core'
 import { theme } from '../../theme'
 
-export const MyButtonMenu = styled(Button)({
+export const MyButtonMenu = styled(({ footer, ...other }) => <Button {...other} />)({
   fontSize: '16px',
   marginLeft: '15px',
   padding: '0px',
@@ -17,7 +18,10 @@ export const MyButtonMenu = styled(Button)({
   '& a.active': {
     textDecoration: 'none',
     position: 'relative',
-    marginLeft: 20
+    marginLeft: (props) =>
+      props.footer
+        ? 0
+        : 20
   },
   '& a:before': {
     content: '\'\'',
@@ -31,7 +35,10 @@ export const MyButtonMenu = styled(Button)({
     marginLeft: 20
   },
   '& a.active:before': {
-    width: 20,
+    width: (props) =>
+      props.footer
+        ? 0
+        : 20,
     marginLeft: 0
   },
   [theme.breakpoints.down('sm')]: {
