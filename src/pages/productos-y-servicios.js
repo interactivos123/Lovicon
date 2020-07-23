@@ -1,12 +1,14 @@
 import React from 'react'
 import { Cabecera } from '../components/generals/Cabecera'
-import { Vacio } from '../components/generals/Vacio'
+import { Arquitectura } from '../components/compProductos/Arquitectura'
+import { Imagenes } from '../components/compProductos/Imagenes'
 
 export const ProductosYServicios = () => {
   return (
     <>
       <Cabecera title='Productos y Servicios' />
-      <Vacio />
+      <Arquitectura />
+      <Imagenes img1='apple1.jpg' img2='apple2.jpg' img3='apple3.jpg' />
     </>
   )
 }
