@@ -92,13 +92,23 @@ export const theme = createMuiTheme({
       root: {
         minWidth: 32
       }
+    },
+    MuiFormLabel: {
+      root: {
+        color: '#000'
+      }
+    },
+    MuiCheckbox: {
+      root: {
+        color: '#000'
+      }
     }
   }
 })
 
 theme.typography.subtitle1 = {
   fontFamily: ['Nunito Sans', '-apple-system'].join(','),
-  fontSize: 56,
+  fontSize: 40,
   fontWeight: 800,
   lineHeight: '1',
   [theme.breakpoints.down('sm')]: {
@@ -111,7 +121,7 @@ theme.typography.subtitle1 = {
 
 theme.typography.subtitle2 = {
   fontFamily: ['Nunito Sans', '-apple-system'].join(','),
-  fontSize: 40,
+  fontSize: 28,
   fontWeight: 600,
   lineHeight: '1',
   [theme.breakpoints.down('sm')]: {

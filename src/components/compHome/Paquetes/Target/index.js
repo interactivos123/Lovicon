@@ -11,7 +11,7 @@ export const Target = ({ title, children, description }) => {
       {children}
       <Description variant='body1' color='textPrimary'>{description}</Description>
       <Separador />
-      <LinkButton to='/contactenos' variant='outlined' color='primary' endIcon={<NavigateNext />} fullWidth>
+      <LinkButton to='/paquetes#cuartaSeccion' variant='outlined' color='primary' endIcon={<NavigateNext />} fullWidth>
         Más información
       </LinkButton>
     </Background>
