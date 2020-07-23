@@ -7,7 +7,7 @@ export const MyBoxBackground = styled(Box)({
   backgroundImage: `url(${Decoracion})`,
   backgroundRepeat: 'no-repeat',
   backgroundSize: 'cover',
-  marginTop: '-100px',
+  // marginTop: '-100px',
   [theme.breakpoints.down('sm')]: {
     marginTop: '40px'
   }
