@@ -1,8 +1,7 @@
 import React from 'react'
 import { Box, InputLabel, TextField } from '@material-ui/core'
-import { Link } from 'gatsby'
 import { NavigateNext } from '@material-ui/icons'
-import { MyFormControl, MySelect, TwoInputs, MyInputText, Terms } from './styles'
+import { MyFormControl, MySelect } from './styles'
 import { LinkButton } from '../../components/generals/Link'
 
 export const FormRegister = () => {
@@ -32,7 +31,7 @@ export const FormRegister = () => {
         </MyFormControl>
 
         <Box mt={2.5}>
-          <LinkButton href='/registro-exitoso' variant='contained' color='primary' fullWidth endIcon={<NavigateNext />}>Resgistrarse</LinkButton>
+          <LinkButton href='/registro-exitoso' variant='contained' color='primary' fullWidth endIcon={<NavigateNext />}>Enviar mensaje</LinkButton>
         </Box>
       </MyFormControl>
     </Box>
