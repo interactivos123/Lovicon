@@ -1,69 +1,39 @@
 import React from 'react'
-import { ContenedorPadre, LineaHorizontal } from '../../../theme'
-import { Grid, Typography, Box } from '@material-ui/core'
-import { ContainerProduct, ContainerProudctosYServicios, MyButton } from './style'
-import { NavigateNext } from '@material-ui/icons'
+import { GridServiciosS1, Title, GridServiciosS2, ItemServicio, Text, Divisor } from './style'
+import { Grid } from '@material-ui/core'
 import Image from '../../image'
 
 export const ProductosYServicios = () => {
   return (
-    <ContainerProudctosYServicios pt={25} mt={-22}>
-      <ContenedorPadre>
-        <Grid container>
-
-          <Grid item md={4}>
-            <Grid container spacing={1}>
-
-              <Grid item md={4}>
-                <LineaHorizontal />
-              </Grid>
-
-              <Grid item md={8}>
-                <Typography variant='subtitle2'>Productos y</Typography>
-                <Typography variant='subtitle1'>servicios</Typography>
-                <Box mt={5}>
-                  <MyButton>
-                    <NavigateNext fontSize='large' />
-                  </MyButton>
-                </Box>
-              </Grid>
-
-            </Grid>
-          </Grid>
-
-          <Grid item md={8}>
-            <Grid container justify='space-around'>
-
-              <Grid item md={3}>
-                <ContainerProduct>
-                  <Image name='arquitectura.png' />
-                  <Typography variant='h4' align='center'>Arquitectura y construcción</Typography>
-                </ContainerProduct>
-              </Grid>
-              <Grid item md={3}>
-                <ContainerProduct>
-                  <Image name='IconDiseno.png' />
-                  <Typography variant='h4' align='center'>Diseño</Typography>
-                </ContainerProduct>
-              </Grid>
-              <Grid item md={3}>
-                <ContainerProduct>
-                  <Image name='IconMobiliario.png' />
-                  <Typography variant='h4' align='center'>Mobiliario</Typography>
-                </ContainerProduct>
-              </Grid>
-              <Grid item md={3}>
-                <ContainerProduct>
-                  <Image name='IconVisual.png' />
-                  <Typography variant='h4' align='center'>Visual Merchandising</Typography>
-                </ContainerProduct>
-              </Grid>
-
-            </Grid>
-          </Grid>
-
+    <>
+      <GridServiciosS1 container>
+        <Title>Nuestros Servicios</Title>
+      </GridServiciosS1>
+      <GridServiciosS2 container>
+        <Grid item xs={12} sm={12} md={7} lg={8} xl={8}>
+          <ItemServicio>
+            Arquitectura y construcción
+          </ItemServicio>
+          <ItemServicio>
+            Diseño
+          </ItemServicio>
+          <ItemServicio>
+            Mobiliario
+          </ItemServicio>
+          <ItemServicio>
+            Visual Merchandising
+          </ItemServicio>
         </Grid>
-      </ContenedorPadre>
-    </ContainerProudctosYServicios>
+        <Grid item xs={12} sm={12} md={5} lg={4} xl={4}>
+          <Image name='ImageServicios.jpg' />
+          <Divisor />
+          <Text>
+            La arquitectura comercial se ha convertido en una sofisticada estrategia de marketing,
+            a través de ella podemos incrementar el valor de tu marca y destacar tus productos entre
+            la densa oferta comercial.
+          </Text>
+        </Grid>
+      </GridServiciosS2>
+    </>
   )
 }

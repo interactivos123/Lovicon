@@ -1,7 +1,7 @@
 import React from 'react'
-import { ContenedorPadre, LineaHorizontalBlanca } from '../../../theme'
-import { MyBoxBackground } from './styles'
-import { Box, Grid, Typography } from '@material-ui/core'
+import { ContenedorPadre } from '../../../theme'
+import { MyBoxBackground, Subtitle } from './styles'
+import { Box, Grid } from '@material-ui/core'
 import { Numero } from '../Numeros'
 
 export const RetailNumeros = () => {
@@ -13,11 +13,11 @@ export const RetailNumeros = () => {
             <Grid item md={6} />
             <Grid item md={6}>
               <Grid container>
-                <Grid item md={2}>
+                {/* <Grid item md={2}>
                   <LineaHorizontalBlanca />
-                </Grid>
-                <Grid item md={10}>
-                  <Typography variant='body2' color='textSecondary'>Lovicon Retail en números</Typography>
+                </Grid> */}
+                <Grid item md={12}>
+                  <Subtitle variant='body2' color='textSecondary'>Lovicon Retail en números</Subtitle>
                 </Grid>
               </Grid>
             </Grid>
