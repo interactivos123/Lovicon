@@ -20,6 +20,7 @@ export const PaquetesComp = ({ noTitulo }) => {
               <Target
                 title='New Store'
                 description='Ideal para marcas nuevas que van a construir su primer punto de venta físico.'
+                idProp='primeraSeccion'
               >
                 <List>
                   <ListItem alignItems='flex-start'>
@@ -41,6 +42,7 @@ export const PaquetesComp = ({ noTitulo }) => {
               <Target
                 title='Expansion Store'
                 description='Ideal para marcas nuevas que van a construir su primer punto de venta físico.'
+                idProp='segundaSeccion'
               >
                 <List>
                   <ListItem alignItems='flex-start'>
@@ -62,6 +64,7 @@ export const PaquetesComp = ({ noTitulo }) => {
               <Target
                 title='Renovation Store'
                 description='Ideal para marcas nuevas que van a construir su primer punto de venta físico.'
+                idProp='terceraSeccion'
               >
                 <List>
                   <ListItem alignItems='flex-start'>
@@ -83,6 +86,7 @@ export const PaquetesComp = ({ noTitulo }) => {
               <Target
                 title='Strategy Store'
                 description='Ideal para marcas nuevas que van a construir su primer punto de venta físico.'
+                idProp='cuartaSeccion'
               >
                 <List>
                   <ListItem alignItems='flex-start'>

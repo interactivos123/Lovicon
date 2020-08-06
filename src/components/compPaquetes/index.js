@@ -79,7 +79,7 @@ export const CompPaquetes = () => {
           Ideal para marcas nuevas que van a construir su primer punto de venta físico.
         </Typography>
       </div>
-      <div id='tercerSeccion'>
+      <div id='terceraSeccion'>
         <Typography variant='h3'>
           New Store
         </Typography>
