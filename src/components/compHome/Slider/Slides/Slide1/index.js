@@ -1,39 +1,39 @@
 import React from 'react'
-import { Container, Content, TextBanner, ContentImage } from './styles'
-import Image from '../../../../image'
 import { Grid, Typography } from '@material-ui/core'
-import { LinkButton } from '../../../../generals/Link'
-import { NavigateNext } from '@material-ui/icons'
-import { LineaHorizontal } from '../../../../../theme'
-
+import { Container, TitleBanner, SubtitleBanner } from './styles'
+import { ListItem } from '../../../../generals/ListItem'
 export const Slide1 = () => {
   return (
-    <Container container alignItems='flex-end' justify='flex-end'>
-      <Content item xs={12} sm={5} md={5} xl={5}>
-        <Grid container>
-          <Grid item xs={1} md={2}>
-            <LineaHorizontal />
+    <Container container alignItems='center'>
+      <Grid item xs={12} sm={7} md={8} lg={8} xl={8}>
+        <Typography variant='h6'>
+          Arquitectura, diseño y gestión<br />
+          de tiendas físicas
+        </Typography>
+        <TitleBanner>
+          Ayudamos a las marcas a
+          crecer, construyendo
+          tiendas físicas en
+          múltiples formatos.
+        </TitleBanner>
+      </Grid>
+      <Grid item xs={12} sm={5} md={4} lg={4} xl={4}>
+        <SubtitleBanner>¿Qué necesita tu marca para crecer?</SubtitleBanner>
+        <Grid container spacing={2}>
+          <Grid item xs={6} sm={6} md={6} lg={6} xl={6}>
+            <ListItem>Diseñar una nueva tienda</ListItem>
           </Grid>
-          <Grid item xs={11} md={10}>
-            <Typography variant='subtitle2'>La tienda física es el espacio</Typography>
-            <Typography variant='subtitle1'>donde se construye el valor de la marca</Typography>
-            <TextBanner variant='body2'>
-              Ayudamos a las marcas a incrementar sus canales de venta físicos, construyendo tiendas espectaculares
-              donde sus clientes puedan tocar, oler, sentir y probar sus productos.
-            </TextBanner>
-            <LinkButton
-              endIcon={<NavigateNext />}
-              variant='outlined'
-              color='primary'
-            >
-              Arquitectura
-            </LinkButton>
+          <Grid item xs={6} sm={6} md={6} lg={6} xl={6}>
+            <ListItem>Construir una nueva tienda</ListItem>
+          </Grid>
+          <Grid item xs={6} sm={6} md={6} lg={6} xl={6}>
+            <ListItem> Renovar mi tienda</ListItem>
+          </Grid>
+          <Grid item xs={6} sm={6} md={6} lg={6} xl={6}>
+            <ListItem>Tienda Omnicanal</ListItem>
           </Grid>
         </Grid>
-      </Content>
-      <ContentImage item xs={12} sm={7} md={7} xl={7}>
-        <Image name='imageBanner1.png' />
-      </ContentImage>
+      </Grid>
     </Container>
   )
 }

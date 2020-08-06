@@ -1,55 +1,43 @@
 import { styled } from '@material-ui/styles'
-import { Grid, Typography } from '@material-ui/core'
-import BgSlider from '../../../../../images/BG-Slider.png'
+import { Grid } from '@material-ui/core'
 import { theme } from '../../../../../theme'
 
 export const Container = styled(Grid)({
-  background: 'transparent',
   width: '100%',
-  height: '100vh',
-  position: 'relative',
-  '& .gatsby-image-wrapper': {
-    width: '100%',
-    height: '100%'
+  padding: '160px 100px 60px 100px',
+  [theme.breakpoints.down('md')]: {
+    padding: '160px 40px 60px 40px'
   },
-  '& .gatsby-image-wrapper img': {
-    objectFit: 'contain!important',
-    objectPosition: 'bottom right!important'
+  [theme.breakpoints.down('xs')]: {
+    padding: '140px 20px 40px 20px'
   }
 })
 
-export const Content = styled(Grid)({
-  height: 'calc(100% - 60px)',
-  display: 'flex',
-  flexDirection: 'column',
-  justifyContent: 'center',
-  padding: '0 40px',
-  backgroundImage: `url(${BgSlider})`,
-  backgroundRepeat: 'no-repeat',
-  backgroundPosition: '18% 16%',
+export const TitleBanner = styled('h3')({
+  fontSize: '48px',
+  lineHeight: '60px',
+  fontWeight: 400,
+  marginTop: '20px',
+  paddingRight: '100px',
+  [theme.breakpoints.down('md')]: {
+    fontSize: '32px',
+    lineHeight: '40px',
+    paddingRight: '20px'
+  },
   [theme.breakpoints.down('xs')]: {
-    height: '60%',
-    justifyContent: 'flex-end',
-    padding: '0 20px 20px 20px',
-    backgroundPosition: '15% 40%'
+    paddingRight: 0,
+    fontSize: '28px'
   }
 })
 
-export const ContentImage = styled(Grid)({
+export const SubtitleBanner = styled('h4')({
+  fontSize: '24px',
+  lineHeight: '28px',
+  fontWeight: 300,
+  paddingBottom: '20px',
+  borderBottom: '3px solid #FF4A55',
+  margin: '0 0 20px 0',
   [theme.breakpoints.down('xs')]: {
-    height: '40%'
-  }
-})
-
-export const GridLineText = styled(Grid)({
-  [theme.breakpoints.down('xs')]: {
-    marginTop: 50
-  }
-})
-
-export const TextBanner = styled(Typography)({
-  padding: '30px 0px',
-  [theme.breakpoints.down('xs')]: {
-    padding: '20px 0px'
+    fontSize: '20px'
   }
 })
