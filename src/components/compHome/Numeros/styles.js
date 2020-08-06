@@ -11,6 +11,9 @@ export const MyGrid = styled(Grid)({
   [theme.breakpoints.down('md')]: {
     width: '20%'
   },
+  [theme.breakpoints.down('sm')]: {
+    width: '50%'
+  },
   [theme.breakpoints.down('xs')]: {
     width: '100%'
   }
