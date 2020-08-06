@@ -142,15 +142,6 @@ theme.typography.body2 = {
   }
 }
 
-theme.typography.direccion = {
-  fontFamily: ['Nunito Sans', '-apple-system'].join(','),
-  fontSize: 28,
-  fontWeight: 400,
-  [theme.breakpoints.down('xs')]: {
-    fontSize: 22
-  }
-}
-
 export const LineaHorizontal = styled('div')({
   width: '70px',
   height: '3px',
@@ -181,12 +172,36 @@ export const LineaHorizontalBlanca = styled('div')({
 })
 
 export const ContenedorPadre = styled(Box)({
-  padding: '0 80px',
+  padding: '0 100px',
   position: 'relative',
+  [theme.breakpoints.down('md')]: {
+    padding: '0 64px'
+  },
   [theme.breakpoints.down('sm')]: {
     padding: '0 30px'
   },
   [theme.breakpoints.down('xs')]: {
     padding: '0 20px'
+  }
+})
+
+export const Title = styled('h3')({
+  fontSize: '40px',
+  paddingTop: '20px',
+  fontWeight: 400,
+  position: 'relative',
+  display: 'inline-block',
+  margin: 0,
+  '&:before': {
+    content: '\'\'',
+    width: '120%',
+    height: '3px',
+    position: 'absolute',
+    backgroundColor: '#FF4A55',
+    top: 0,
+    left: 0
+  },
+  [theme.breakpoints.down('sm')]: {
+    fontSize: '30px'
   }
 })
