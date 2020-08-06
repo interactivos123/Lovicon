@@ -141,6 +141,15 @@ theme.typography.body2 = {
   }
 }
 
+theme.typography.direccion = {
+  fontFamily: ['Nunito Sans', '-apple-system'].join(','),
+  fontSize: 28,
+  fontWeight: 400,
+  [theme.breakpoints.down('xs')]: {
+    fontSize: 22
+  }
+}
+
 export const LineaHorizontal = styled('div')({
   width: '70px',
   height: '3px',
