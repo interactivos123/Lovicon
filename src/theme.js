@@ -43,8 +43,9 @@ export const theme = createMuiTheme({
       fontWeight: 700
     },
     h6: {
-      fontSize: 24,
-      fontWeight: 700
+      fontSize: '20px',
+      lineHeight: '24px',
+      fontWeight: 300
     },
     subtitle1: {
       fontSize: 56,
