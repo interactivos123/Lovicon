@@ -13,11 +13,11 @@ export const Equipo = () => {
             <Grid item lg={6} md={12}>
               <Grid container>
 
-                <Grid lg={3} md={1}>
+                <Grid item lg={3} md={1}>
                   <LineaHorizontal />
                 </Grid>
 
-                <Grid lg={9} md={11}>
+                <Grid item lg={9} md={11}>
                   <Typography variant='subtitle2'>Equipo de</Typography>
                   <Typography variant='subtitle1'>especialistas</Typography>
                   <MyBox>
