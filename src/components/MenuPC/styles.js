@@ -20,6 +20,9 @@ export const MyAppBar = styled(AppBar)({
   '&.sticky .gatsby-image-wrapper': {
     width: '140px'
   },
+  '&.sticky .submenu': {
+    top: '60px'
+  },
   [theme.breakpoints.down('md')]: {
     padding: '0 30px'
   }

@@ -1,8 +1,6 @@
 import { styled } from '@material-ui/styles'
-import { Box, Grid } from '@material-ui/core'
+import { Box, Grid, Typography } from '@material-ui/core'
 import { theme } from '../../../theme'
-import bgEquipo from '../../../images/bgequipo.png'
-import bgConst from '../../../images/backConstrutendo.png'
 
 export const MyBox = styled(Box)({
   margin: '30px 0',
@@ -31,13 +29,25 @@ export const ContainerProduct = styled(Box)({
 })
 
 export const BgBox = styled(Box)({
-  backgroundImage: `url(${bgEquipo})`,
   backgroundRepeat: 'no-repeat',
   backgroundPosition: '-12% -12%'
 })
 
 export const MyGrid = styled(Grid)({
-  backgroundImage: `url(${bgConst})`,
   backgroundRepeat: 'no-repeat',
   backgroundPosition: 'bottom right'
+})
+
+export const TitleLine = styled(Typography)({
+  paddingTop: '20px',
+  position: 'relative',
+  '&&:before': {
+    content: '\'\'',
+    width: '80px',
+    height: '3px',
+    backgroundColor: '#FF4A55',
+    position: 'absolute',
+    top: 0,
+    left: 0
+  }
 })
