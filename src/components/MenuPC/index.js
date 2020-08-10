@@ -18,7 +18,6 @@ export const MenuPC = (props) => {
     window.onscroll = function () {
       if (window.pageYOffset >= 1) {
         navbar.classList.add('sticky')
-        console.log('social')
       } else {
         navbar.classList.remove('sticky')
       }

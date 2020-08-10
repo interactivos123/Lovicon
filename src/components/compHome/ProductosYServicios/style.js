@@ -96,5 +96,8 @@ export const Text = styled('p')({
   fontWeight: 300,
   lineHeight: '20px',
   color: '#ffffff',
-  margin: 0
+  margin: 0,
+  transition: '.3s',
+  overflow: 'hidden',
+  height: '0'
 })

@@ -1,33 +1,25 @@
 import React from 'react'
 import Image from '../../image'
-import { ContenedorPadre, LineaHorizontal } from '../../../theme'
+import { ContenedorPadre } from '../../../theme'
 import { Grid, Box, Typography } from '@material-ui/core'
-import { MyBox, ContainerProduct, BgBox, MyGrid } from './style'
+import { MyBox, ContainerProduct, BgBox, MyGrid, TitleLine } from './style'
 export const Equipo = () => {
   return (
     <BgBox>
       <ContenedorPadre>
-        <Box py={15}>
+        <Box pt={10} pb={5}>
           <MyGrid container alignItems='center'>
 
             <Grid item lg={6} md={12}>
-              <Grid container>
-
-                <Grid lg={3} md={1}>
-                  <LineaHorizontal />
-                </Grid>
-
-                <Grid lg={9} md={11}>
-                  <Typography variant='subtitle2'>Equipo de</Typography>
-                  <Typography variant='subtitle1'>especialistas</Typography>
-                  <MyBox>
-                    <Typography variant='body1'>
+              <Grid lg={9} md={11}>
+                <TitleLine variant='subtitle2'>Equipo de</TitleLine>
+                <Typography variant='subtitle1'>especialistas</Typography>
+                <MyBox>
+                  <Typography variant='body1'>
                   Contamos con un equipo de trabajo formado por arquitectos, ingenieros, diseñadores y profesionales en
                   mercaceo que nos dan la seguridad de desarrollar proyectos comerciales de gran magnitud alcanzando los resultados trazados.
-                    </Typography>
-                  </MyBox>
-                </Grid>
-
+                  </Typography>
+                </MyBox>
               </Grid>
             </Grid>
 

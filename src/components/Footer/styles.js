@@ -1,8 +1,8 @@
 import { styled } from '@material-ui/core/styles'
 import { Grid, Link } from '@material-ui/core'
 import { theme } from '../../theme'
-import rectFooter from '../../images/rectfooer.png'
-import circFooter from '../../images/circfooter.png'
+// import rectFooter from '../../images/rectfooer.png'
+// import circFooter from '../../images/circfooter.png'
 
 export const MyContainerFooter = styled(Grid)({
   maxWidth: '1140px',
@@ -49,7 +49,7 @@ export const MyColumn2 = styled(Grid)({
   display: 'flex',
   flexDirection: 'column',
   justifyContent: 'space-between',
-  background: `url(${rectFooter})`,
+  // background: `url(${rectFooter})`,
   backgroundRepeat: 'no-repeat',
   backgroundPosition: 'top right',
   backgroundSize: 'initial'
@@ -70,7 +70,7 @@ export const MyLinkTerminos = styled(Link)({
 })
 
 export const MyContainerColombia = styled(Grid)({
-  background: `url(${circFooter})`,
+  // background: `url(${circFooter})`,
   backgroundRepeat: 'no-repeat',
   backgroundPosition: 'top right',
   backgroundSize: 'initial'
