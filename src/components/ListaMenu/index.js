@@ -14,7 +14,7 @@ export const ListaMenu = (props) => {
 
         Productos y Servicios<ExpandMore />
 
-        <SubmenuContainer className='submenu'>
+        {/* <SubmenuContainer className='submenu'>
           <Grid container>
             <Grid item sm={3}>
               <Link to='/arquitectura-y-construccion'>
@@ -37,7 +37,7 @@ export const ListaMenu = (props) => {
               </Link>
             </Grid>
           </Grid>
-        </SubmenuContainer>
+        </SubmenuContainer> */}
 
       </MyButtonMenu>
       <MyButtonMenu onClick={() => props.handleOpen ? props.handleOpen() : null} footer={props.footer}>
