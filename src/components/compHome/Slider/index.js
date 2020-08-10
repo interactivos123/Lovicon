@@ -13,8 +13,8 @@ export const Slider = () => {
   return (
     <SliderContainer>
       <Swiper
-        spaceBetween={0}
-        slidesPerView={1}
+        spaceBetween={40}
+        slidesPerView='auto'
         pagination={{
           clickable: true,
           type: 'fraction'
