@@ -12,7 +12,7 @@ export const ListaMenu = (props) => {
         <Link to='/productos-y-servicios' activeClassName='active'>Productos y Servicios</Link>
       </MyButtonMenu>
       <MyButtonMenu onClick={() => props.handleOpen ? props.handleOpen() : null} footer={props.footer}>
-        <Link to='/paquetes' activeClassName='active'>Paquetes</Link>
+        <Link to='/paquetes' activeClassName='active'>Paquete</Link>
       </MyButtonMenu>
       <MyButtonMenu onClick={() => props.handleOpen ? props.handleOpen() : null} footer={props.footer}>
         <Link to='/tienda-virtual' activeClassName='active'>Tienda Virtual</Link>
