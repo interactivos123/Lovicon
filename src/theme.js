@@ -120,6 +120,21 @@ theme.typography.subtitle1 = {
   }
 }
 
+theme.typography.h6 = {
+  fontFamily: ['Nunito Sans', '-apple-system'].join(','),
+  fontSize: 40,
+  fontWeight: 300,
+  lineHeight: '1',
+  [theme.breakpoints.down('sm')]: {
+    fontSize: 24,
+    lineHeight: '32px'
+  },
+  [theme.breakpoints.down('xs')]: {
+    fontSize: 18,
+    lineHeight: '24px'
+  }
+}
+
 theme.typography.subtitle2 = {
   fontFamily: ['Nunito Sans', '-apple-system'].join(','),
   fontSize: 28,

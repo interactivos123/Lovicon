@@ -1,6 +1,7 @@
 import { styled } from '@material-ui/core/styles'
 import { Grid } from '@material-ui/core'
 import { theme } from '../../../theme'
+
 export const Container = styled(Grid)({
   width: '100%',
   padding: '100px  100px 80px 100px',
@@ -38,5 +39,21 @@ export const Text = styled('p')({
   fontSize: '18px',
   lineHeight: '24px',
   paddingTop: '80px',
-  margin: 0
+  margin: 0,
+  [theme.breakpoints.down('xs')]: {
+    paddingTop: '60px'
+  }
+})
+
+export const SubtitleBanner = styled('h4')({
+  fontSize: '24px',
+  lineHeight: '28px',
+  fontWeight: 300,
+  paddingBottom: '20px',
+  borderBottom: '3px solid #FF4A55',
+  margin: '0 0 20px 0',
+  [theme.breakpoints.down('xs')]: {
+    fontSize: '18px',
+    lineHeight: '24px'
+  }
 })

@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import { GridServiciosS1, Title, GridServiciosS2, ItemServicio, Text, Divisor } from './style'
+import { GridServiciosS1, Title, GridServiciosS2, ItemServicio, Text, Divisor, ContainerImageMobil } from './style'
 import { Grid, Box, Hidden } from '@material-ui/core'
 import Image from '../../image'
 
@@ -47,9 +47,16 @@ export const ProductosYServicios = () => {
   })
   return (
     <>
-      <GridServiciosS1 container>
-        <Title>Nuestros Servicios</Title>
-      </GridServiciosS1>
+      <Hidden xsDown>
+        <GridServiciosS1 container>
+          <Title>Nuestros Servicios</Title>
+        </GridServiciosS1>
+      </Hidden>
+      <Hidden smUp>
+        <ContainerImageMobil>
+          <Image name='ImageServicios.jpg' />
+        </ContainerImageMobil>
+      </Hidden>
       <GridServiciosS2 container>
         <Grid item xs={12} sm={12} md={7} lg={8} xl={8}>
           <ItemServicio id='arquitectura'>
