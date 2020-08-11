@@ -1,5 +1,5 @@
 import { styled } from '@material-ui/core/styles'
-import { Grid, Link } from '@material-ui/core'
+import { Grid } from '@material-ui/core'
 import { theme } from '../../theme'
 // import rectFooter from '../../images/rectfooer.png'
 // import circFooter from '../../images/circfooter.png'
@@ -38,6 +38,22 @@ export const MyColumn1 = styled(Grid)({
     display: 'flex',
     maxWidth: '250px',
     justifyContent: 'inherit'
+  },
+  [theme.breakpoints.down('sm')]: {
+    '& .gatsby-image-wrapper': {
+      marginBottom: '50px'
+    }
+  },
+  [theme.breakpoints.down('xs')]: {
+    '& .gatsby-image-wrapper': {
+      margin: '0 auto',
+      marginBottom: '50px',
+      width: '250px'
+    },
+    '& .MuiBox-root': {
+      width: '250px',
+      margin: '0 auto'
+    }
   }
 })
 
@@ -49,13 +65,12 @@ export const MyColumn2 = styled(Grid)({
   display: 'flex',
   flexDirection: 'column',
   justifyContent: 'space-between',
-  // background: `url(${rectFooter})`,
-  backgroundRepeat: 'no-repeat',
-  backgroundPosition: 'top right',
-  backgroundSize: 'initial'
+  [theme.breakpoints.down('xs')]: {
+    marginTop: '50px'
+  }
 })
 
-export const MyLinkTerminos = styled(Link)({
+export const MyLinkTerminos = styled('li')({
   fontSize: '16px',
   color: theme.palette.text.primary,
   padding: '2px 12px',
@@ -64,14 +79,20 @@ export const MyLinkTerminos = styled(Link)({
   textDecoration: 'none',
   fontWeight: '500',
   margin: '20px 0 0 15px',
+  listStyle: 'none',
+  '& a': {
+    textDecoration: 'none',
+    color: '#000'
+  },
   '&:hover': {
     textDecoration: 'none'
   }
 })
 
 export const MyContainerColombia = styled(Grid)({
-  // background: `url(${circFooter})`,
-  backgroundRepeat: 'no-repeat',
-  backgroundPosition: 'top right',
-  backgroundSize: 'initial'
+  [theme.breakpoints.down('xs')]: {
+    '& p': {
+      textAlign: 'center'
+    }
+  }
 })

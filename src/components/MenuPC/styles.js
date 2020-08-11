@@ -53,6 +53,7 @@ export const MyContainerSocials = styled(Grid)({
 })
 
 export const MyIconButton = styled(IconButton)({
+  padding: '0',
   '& svg': {
     fontSize: '40px',
     margin: 0
