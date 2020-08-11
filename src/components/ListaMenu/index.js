@@ -32,27 +32,27 @@ const ListaMenu = (props) => {
       </MyButtonMenu>
       <PadreSubMenu onClick={handleClickProductos}>
 
-        <p>Productos y Servicios<ExpandMore /></p>
+        <p>Servicios<ExpandMore /></p>
         <Collapse in={openProductos} timeout='auto' unmountOnExit>
           <SubmenuContainer className='submenu'>
             <Grid container>
               <Grid item md={3}>
-                <Link to='/productos-y-servicios/arquitectura-y-construccion'>
+                <Link to='/servicios/arquitectura-y-construccion'>
                   <Button onClick={() => props.handleOpen ? props.handleOpen() : null}>Arquitectura y contrucción</Button>
                 </Link>
               </Grid>
               <Grid item md={3}>
-                <Link to='/productos-y-servicios/diseno'>
+                <Link to='/servicios/diseno'>
                   <Button onClick={() => props.handleOpen ? props.handleOpen() : null}>Diseño</Button>
                 </Link>
               </Grid>
               <Grid item md={3}>
-                <Link to='/productos-y-servicios/mobiliario'>
+                <Link to='/servicios/mobiliario'>
                   <Button onClick={() => props.handleOpen ? props.handleOpen() : null}>Mobiliario</Button>
                 </Link>
               </Grid>
               <Grid item md={3}>
-                <Link to='/productos-y-servicios/visual-merchandising'>
+                <Link to='/servicios/visual-merchandising'>
                   <Button onClick={() => props.handleOpen ? props.handleOpen() : null}>Visual Merchandising</Button>
                 </Link>
               </Grid>

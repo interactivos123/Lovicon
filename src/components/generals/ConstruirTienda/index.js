@@ -27,22 +27,22 @@ export const ConstruirTuTienda = ({ title }) => {
       <MyGridContainer container>
 
         <Grid item sm={3} xs={6}>
-          <Link to='/productos-y-servicios/arquitectura-y-construccion'>
+          <Link to='/servicios/arquitectura-y-construccion'>
             <Button>Arquitectura y construcción</Button>
           </Link>
         </Grid>
         <Grid item sm={3} xs={6}>
-          <Link to='/productos-y-servicios/diseno'>
+          <Link to='/servicios/diseno'>
             <Button>Diseño </Button>
           </Link>
         </Grid>
         <Grid item sm={3} xs={6}>
-          <Link to='/productos-y-servicios/mobiliario'>
+          <Link to='/servicios/mobiliario'>
             <Button>Mobiliario </Button>
           </Link>
         </Grid>
         <Grid item sm={3} xs={6}>
-          <Link to='/productos-y-servicios/visual-merchandising'>
+          <Link to='/servicios/visual-merchandising'>
             <Button>Visual Merchandising</Button>
           </Link>
         </Grid>
