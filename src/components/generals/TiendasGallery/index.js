@@ -1,8 +1,8 @@
 import React from 'react'
 import { ContenedorPadre, Title } from '../../../theme'
 import { Box, Hidden } from '@material-ui/core'
-import { Imagenes } from '../../generals/Imagenes'
-import Image from '../../image'
+import { Imagenes } from '../ImagenesGaleria'
+import { ModalImagen } from '../ModalImagen'
 
 import { Swiper, SwiperSlide } from 'swiper/react'
 import SwiperStyles from 'swiper/swiper-bundle.min.css'
@@ -10,14 +10,14 @@ import SwiperCore, { Pagination, Autoplay } from 'swiper'
 
 SwiperCore.use([Pagination, Autoplay])
 
-export const Tiendas = () => {
+export const TiendasGaleria = ({ title, img1, img2, img3 }) => {
   return (
     <>
       <ContenedorPadre>
         <Box mt={10}>
-          <Title>Nuestras tiendas</Title>
+          <Title>{title}</Title>
           <Box my={5}>
-            <Imagenes img1='arquitectura1.jpg' img2='arquitectura2.jpg' img3='arquitectura3.jpg' />
+            <Imagenes img1={img1} img2={img2} img3={img3} />
           </Box>
         </Box>
       </ContenedorPadre>
@@ -36,9 +36,9 @@ export const Tiendas = () => {
           }}
           loop
         >
-          <SwiperSlide><Image name='arquitectura1.jpg' /></SwiperSlide>
-          <SwiperSlide><Image name='arquitectura1.jpg' /></SwiperSlide>
-          <SwiperSlide><Image name='arquitectura1.jpg' /></SwiperSlide>
+          <SwiperSlide><ModalImagen name='arquitectura1.jpg' /></SwiperSlide>
+          <SwiperSlide><ModalImagen name='arquitectura1.jpg' /></SwiperSlide>
+          <SwiperSlide><ModalImagen name='arquitectura1.jpg' /></SwiperSlide>
         </Swiper>
       </Hidden>
     </>

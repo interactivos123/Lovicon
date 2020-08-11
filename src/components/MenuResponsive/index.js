@@ -1,9 +1,10 @@
 import React from 'react'
-import { ListaMenu } from '../ListaMenu'
 import { MyDrawer, MyIconButton, MyContainerSocials } from './styles'
 import CloseIcon from '@material-ui/icons/Close'
 import { RedesSociales } from '../RedesSociales'
 import { Grid } from '@material-ui/core'
+import loadable from '@loadable/component'
+const ListaMenu = loadable(() => import('../ListaMenu'))
 
 export const MenuResponsive = (props) => {
   return (

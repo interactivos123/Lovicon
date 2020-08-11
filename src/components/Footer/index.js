@@ -4,9 +4,10 @@ import Image from '../image'
 import { RedesSociales } from '../RedesSociales'
 import { Phone, Email, Room } from '@material-ui/icons'
 import { CajaDeIcono } from '../cajaDeIcono'
-import { ListaMenu } from '../ListaMenu'
 import { ContenedorPadre } from '../../theme'
 import { MyContainerFooter, MyColumn1, MyContainerMenu, MyColumn2, MyLinkTerminos, MyContainerColombia } from './styles'
+import loadable from '@loadable/component'
+const ListaMenu = loadable(() => import('../ListaMenu'))
 
 const Footer = () => {
   return (

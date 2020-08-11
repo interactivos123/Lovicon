@@ -8,14 +8,6 @@ export const MyButtonMenu = styled(({ footer, ...other }) => <Button {...other} 
   marginLeft: '15px',
   padding: '0px',
   fontWeight: '500',
-  '&& svg': {
-    width: '20px',
-    marginLeft: '5px'
-  },
-  '&:hover .submenu': {
-    opacity: '1',
-    visibility: 'visible'
-  },
   '& a': {
     color: theme.palette.text.primary,
     padding: '2px 12px',
@@ -85,5 +77,62 @@ export const SubmenuContainer = styled(Box)({
     fontSize: '20px',
     fontWeight: '400',
     borderRadius: '0'
+  },
+  [theme.breakpoints.down('sm')]: {
+    opacity: '1',
+    visibility: 'visible',
+    position: 'relative',
+    width: 'auto',
+    top: '0px',
+    left: '0px',
+    background: 'transparent',
+    '& .MuiGrid-container': {
+      flexDirection: 'column'
+    },
+    '& button': {
+      color: '#000',
+      padding: '10px 20px',
+      fontSize: '16px'
+    },
+    '& button span': {
+      display: 'block',
+      textAlign: 'left',
+      paddingLeft: '30px'
+    }
+  }
+})
+
+export const PadreSubMenu = styled('div')({
+  color: '#000',
+  fontSize: '16px',
+  margin: '0px',
+  paddingLeft: '15px',
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center',
+  fontWeight: '500',
+  cursor: 'pointer',
+  '& p': {
+    display: 'flex'
+  },
+  '&& svg': {
+    width: '20px',
+    marginLeft: '5px'
+  },
+  '&:hover .submenu': {
+    opacity: '1',
+    visibility: 'visible'
+  },
+  [theme.breakpoints.down('sm')]: {
+    flexDirection: 'column',
+    '& p': {
+      textAlign: 'left',
+      width: '100%',
+      paddingLeft: '16px',
+      display: 'flex'
+    },
+    '& .MuiCollapse-container': {
+      width: '100%'
+    }
   }
 })

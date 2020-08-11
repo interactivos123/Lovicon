@@ -11,7 +11,7 @@ export const Slide1 = () => {
       </GridImage>
       <Grid item xs={12} sm={6} md={6} lg={6} xl={4}>
         <Box mt={[5, 10]}>
-          <Typography variant='p'>
+          <Typography variant='body2'>
             Ideal para marcas nuevas que van a construir su primer punto de venta físico.
           </Typography>
         </Box>

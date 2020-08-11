@@ -1,15 +1,17 @@
 import React from 'react'
 import { ContenedorPadre, Title } from '../../../theme'
 import { Box, Grid, Button } from '@material-ui/core'
-import { MyButton, MyGridContainer } from './style'
+import { MyButton, MyGridContainer, MyMaxWidth } from './style'
 import { Link } from 'gatsby'
 
-export const ConstruirTuTienda = () => {
+export const ConstruirTuTienda = ({ title }) => {
   return (
     <>
       <ContenedorPadre>
         <Box mt={15} mb={15}>
-          <Title>¿Quieres construir tu tienda?</Title>
+          <MyMaxWidth>
+            <Title>{title}</Title>
+          </MyMaxWidth>
           <Box mt={8}>
             <Box mb={4}>
               <a href='callto:+573182664538'>
@@ -25,22 +27,22 @@ export const ConstruirTuTienda = () => {
       <MyGridContainer container>
 
         <Grid item sm={3} xs={6}>
-          <Link to='/arquitectura-y-construccion'>
+          <Link to='/productos-y-servicios/arquitectura-y-construccion'>
             <Button>Arquitectura y construcción</Button>
           </Link>
         </Grid>
         <Grid item sm={3} xs={6}>
-          <Link to='/diseno'>
+          <Link to='/productos-y-servicios/diseno'>
             <Button>Diseño </Button>
           </Link>
         </Grid>
         <Grid item sm={3} xs={6}>
-          <Link to='/mobiliario'>
+          <Link to='/productos-y-servicios/mobiliario'>
             <Button>Mobiliario </Button>
           </Link>
         </Grid>
         <Grid item sm={3} xs={6}>
-          <Link to='visual-merchandasing'>
+          <Link to='/productos-y-servicios/visual-merchandising'>
             <Button>Visual Merchandising</Button>
           </Link>
         </Grid>

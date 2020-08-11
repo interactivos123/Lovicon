@@ -11,7 +11,7 @@ export const Equipo = () => {
           <MyGrid container alignItems='center'>
 
             <Grid item lg={6} md={12}>
-              <Grid lg={9} md={11}>
+              <Grid item lg={9} md={11}>
                 <TitleLine variant='subtitle2'>Equipo de</TitleLine>
                 <Typography variant='subtitle1'>especialistas</Typography>
                 <MyBox>

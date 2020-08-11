@@ -45,3 +45,7 @@ export const MyGridContainer = styled(Grid)({
     }
   }
 })
+
+export const MyMaxWidth = styled('div')({
+  maxWidth: '600px'
+})

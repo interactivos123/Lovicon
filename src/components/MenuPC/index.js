@@ -3,7 +3,8 @@ import { Grid } from '@material-ui/core'
 import Image from '../image'
 import { Menu } from '@material-ui/icons'
 import { Link } from 'gatsby'
-import { ListaMenu } from '../ListaMenu'
+import loadable from '@loadable/component'
+
 import {
   MyAppBar,
   MyToolbar,
@@ -11,6 +12,8 @@ import {
   MyContainerMenu,
   MyContainerIconMenuResponsive
 } from './styles'
+
+const ListaMenu = loadable(() => import('../ListaMenu'))
 
 export const MenuPC = (props) => {
   useEffect(() => {
