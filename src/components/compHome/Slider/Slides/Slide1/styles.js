@@ -26,7 +26,8 @@ export const TitleBanner = styled('h3')({
   },
   [theme.breakpoints.down('xs')]: {
     paddingRight: 0,
-    fontSize: '28px'
+    fontSize: '24px',
+    lineHeight: '32px'
   }
 })
 
@@ -38,6 +39,7 @@ export const SubtitleBanner = styled('h4')({
   borderBottom: '3px solid #FF4A55',
   margin: '0 0 20px 0',
   [theme.breakpoints.down('xs')]: {
-    fontSize: '20px'
+    fontSize: '18px',
+    lineHeight: '24px'
   }
 })

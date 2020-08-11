@@ -101,3 +101,10 @@ export const Text = styled('p')({
   overflow: 'hidden',
   height: '0'
 })
+
+export const ContainerImageMobil = styled('div')({
+  height: '300px',
+  '& .gatsby-image-wrapper': {
+    height: '300px'
+  }
+})

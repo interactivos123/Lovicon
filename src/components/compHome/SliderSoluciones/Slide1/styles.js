@@ -1,5 +1,6 @@
 import { styled } from '@material-ui/core/styles'
-import { Grid } from '@material-ui/core'
+import { Grid, Typography } from '@material-ui/core'
+import { theme } from '../../../../theme'
 
 export const GridImage = styled(Grid)({
   display: 'flex',
@@ -7,5 +8,11 @@ export const GridImage = styled(Grid)({
   marginTop: '80px',
   '& .gatsby-image-wrapper': {
     width: '200px'
+  }
+})
+
+export const SliderText = styled(Typography)({
+  [theme.breakpoints.down('xs')]: {
+    textAlign: 'center'
   }
 })

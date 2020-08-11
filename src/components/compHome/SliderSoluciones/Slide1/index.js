@@ -1,6 +1,6 @@
 import React from 'react'
-import { Grid, Typography, Box } from '@material-ui/core'
-import { GridImage } from './styles'
+import { Grid, Box } from '@material-ui/core'
+import { GridImage, SliderText } from './styles'
 import Image from '../../../image'
 
 export const Slide1 = () => {
@@ -11,9 +11,9 @@ export const Slide1 = () => {
       </GridImage>
       <Grid item xs={12} sm={6} md={6} lg={6} xl={4}>
         <Box mt={[5, 10]}>
-          <Typography variant='body2'>
+          <SliderText variant='body2'>
             Ideal para marcas nuevas que van a construir su primer punto de venta físico.
-          </Typography>
+          </SliderText>
         </Box>
       </Grid>
     </Grid>
