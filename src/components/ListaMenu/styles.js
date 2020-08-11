@@ -78,6 +78,9 @@ export const SubmenuContainer = styled(Box)({
     fontWeight: '400',
     borderRadius: '0'
   },
+  '& a': {
+    textDecoration: 'none'
+  },
   [theme.breakpoints.down('sm')]: {
     opacity: '1',
     visibility: 'visible',

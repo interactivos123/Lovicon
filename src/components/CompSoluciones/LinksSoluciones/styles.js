@@ -27,6 +27,9 @@ export const MyGridContainer = styled(Grid)({
     borderRadius: '0px',
     padding: '20px 0'
   },
+  '& a': {
+    textDecoration: 'none'
+  },
   [theme.breakpoints.down('xs')]: {
     '& .MuiGrid-item:nth-child(3), & .MuiGrid-item:nth-child(4)': {
       borderTop: '0px'

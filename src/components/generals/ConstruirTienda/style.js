@@ -1,6 +1,12 @@
 import { styled } from '@material-ui/styles'
-import { Button, Grid } from '@material-ui/core'
+import { Button, Grid, Box } from '@material-ui/core'
 import { theme } from '../../../theme'
+
+export const MyContainerButtons = styled(Box)({
+  '& a': {
+    textDecoration: 'none'
+  }
+})
 
 export const MyButton = styled(Button)({
   color: '#FF4A55',
@@ -35,6 +41,9 @@ export const MyGridContainer = styled(Grid)({
     color: '#FF4A55',
     borderRadius: '0px',
     padding: '20px 0'
+  },
+  '& a': {
+    textDecoration: 'none'
   },
   [theme.breakpoints.down('xs')]: {
     '& .MuiGrid-item:nth-child(3), & .MuiGrid-item:nth-child(4)': {

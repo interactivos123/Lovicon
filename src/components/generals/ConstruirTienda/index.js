@@ -1,14 +1,14 @@
 import React from 'react'
 import { ContenedorPadre, Title } from '../../../theme'
 import { Box, Grid, Button } from '@material-ui/core'
-import { MyButton, MyGridContainer, MyMaxWidth } from './style'
+import { MyButton, MyGridContainer, MyMaxWidth, MyContainerButtons } from './style'
 import { Link } from 'gatsby'
 
 export const ConstruirTuTienda = ({ title }) => {
   return (
     <>
       <ContenedorPadre>
-        <Box mt={15} mb={15}>
+        <MyContainerButtons mt={15} mb={15}>
           <MyMaxWidth>
             <Title>{title}</Title>
           </MyMaxWidth>
@@ -22,7 +22,7 @@ export const ConstruirTuTienda = ({ title }) => {
               <MyButton>Escribe a nuestro whatsApp Bussines. </MyButton>
             </a>
           </Box>
-        </Box>
+        </MyContainerButtons>
       </ContenedorPadre>
       <MyGridContainer container>
 
