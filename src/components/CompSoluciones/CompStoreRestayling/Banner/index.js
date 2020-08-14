@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'gatsby'
 import { Grid, Typography, Box, Hidden } from '@material-ui/core'
 import { Indicador } from '../../../generals/IndicadorPag'
 import { MyColumn } from './styles'
@@ -30,7 +31,9 @@ export const Banner = () => {
             </Box>
             <Box mt={2.5} mr={10}>
               <Typography>
-                Si tu tienda necesita un diseño completamente nuevo visita la solución “New Store Now”
+                <Link to='/soluciones/new-store'>
+                  Si tu tienda necesita un diseño completamente nuevo visita la solución “New Store Now”
+                </Link>
               </Typography>
             </Box>
           </Hidden>
@@ -50,7 +53,9 @@ export const Banner = () => {
               </Box>
               <Box mt={2.5}>
                 <Typography>
-                  Si tu tienda necesita un diseño completamente nuevo visita la solución “New Store Now”
+                  <Link to='/soluciones/new-store'>
+                    Si tu tienda necesita un diseño completamente nuevo visita la solución “New Store Now”
+                  </Link>
                 </Typography>
               </Box>
             </Box>

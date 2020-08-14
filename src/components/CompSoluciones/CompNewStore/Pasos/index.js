@@ -4,7 +4,7 @@ import { ContainerCard, StepNumber, StepTitle, StepContent, ContainerSwiper, Con
 import { ListItem } from '../../../generals/ListItem'
 
 import { SwiperSlide } from 'swiper/react'
-import SwiperCore, { Autoplay } from 'swiper'
+import SwiperCore, { Autoplay, Navigation } from 'swiper'
 import SwiperStyles from 'swiper/swiper-bundle.min.css'
 
 const Card = ({ number, title, content }) => {
@@ -19,11 +19,11 @@ const Card = ({ number, title, content }) => {
   )
 }
 
-SwiperCore.use([Autoplay])
+SwiperCore.use([Autoplay, Navigation])
 
 const CarrouselPasos = () => {
   return (
-    <Box mt={5} ml={{ xs: 0, sm: 5, md: 8, lg: 12.5 }}>
+    <Box mt={5} mx={{ xs: 0, sm: 5, md: 8, lg: 12.5 }}>
       <ContainerSwiper
         spaceBetween={0}
         slidesPerView='auto'
@@ -32,6 +32,7 @@ const CarrouselPasos = () => {
           delay: 5000,
           disableOnInteraction: false
         }}
+        navigation
       >
         <SwiperSlide>
           <Card

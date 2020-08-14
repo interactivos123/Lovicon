@@ -2,7 +2,7 @@ import React from 'react'
 import { ContenedorPadre } from '../../../theme'
 import { Grid } from '@material-ui/core'
 import { TitleLine, ContainerSwiper } from './styles'
-import { Slide1 } from '../SliderSoluciones/Slide1'
+import { Slide } from '../SliderSoluciones/Slide'
 import SwiperStyles from 'swiper/swiper-bundle.min.css'
 
 import { SwiperSlide } from 'swiper/react'
@@ -29,10 +29,35 @@ export const Soluciones = () => {
             }}
             loop
           >
-            <SwiperSlide><Slide1 /></SwiperSlide>
-            <SwiperSlide><Slide1 /></SwiperSlide>
-            <SwiperSlide><Slide1 /></SwiperSlide>
-            <SwiperSlide><Slide1 /></SwiperSlide>
+            <SwiperSlide>
+              <Slide
+                imagePath='ImgExpandingStore.png'
+                url='/soluciones/expanding-brand'
+                text='Ideal para marcas en crecimeinto, con tiendas posicionadas en elmercado y que se
+                      encuentran en expansión.'
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Slide
+                imagePath='ImgNewStore.png'
+                url='soluciones/new-store'
+                text='Ideal para marcas nuevas que van a construir su primer punto de venta físico.'
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Slide
+                imagePath='ImgStoreRestyling.png'
+                url='/soluciones/storerestayling'
+                text='Ideal para marcas que quieren remodelar sus tiendas.'
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Slide
+                imagePath='ImgOmnichannelStore.png'
+                url='/soluciones/omnichannel-store'
+                text='Ideal para marcas que reponden a nuevos comportamientos de compra.'
+              />
+            </SwiperSlide>
           </ContainerSwiper>
         </Grid>
       </Grid>

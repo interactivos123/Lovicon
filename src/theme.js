@@ -72,6 +72,14 @@ export const theme = createMuiTheme({
     }
   },
   overrides: {
+    MuiTypography: {
+      root: {
+        '& a': {
+          color: '#000',
+          textDecoration: 'none'
+        }
+      }
+    },
     MuiButton: {
       root: {
         borderRadius: 25

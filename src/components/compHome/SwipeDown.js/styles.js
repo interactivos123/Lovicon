@@ -1,8 +1,12 @@
 import { styled } from '@material-ui/core/styles'
 import { theme } from '../../../theme'
+
 export const ContainerSwipeDown = styled('section')({
   width: '100%',
   position: 'relative',
+  '& .gatsby-image-wrapper': {
+    height: '500px'
+  },
   '& svg': {
     position: 'absolute',
     top: '40px',

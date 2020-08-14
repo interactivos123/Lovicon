@@ -1,8 +1,8 @@
 import * as React from 'react'
-
+import { SVG } from './styles'
 export function SwipeDownIcon (props) {
   return (
-    <svg width={79.5} height={79.5} viewBox='0 0 79.5 79.5' {...props}>
+    <SVG width={79.5} height={79.5} viewBox='0 0 79.5 79.5' {...props}>
       <g transform='translate(-167 -876)'>
         <path
           data-name='Trazado 11'
@@ -21,6 +21,6 @@ export function SwipeDownIcon (props) {
           strokeWidth={3}
         />
       </g>
-    </svg>
+    </SVG>
   )
 }

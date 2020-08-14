@@ -7,6 +7,7 @@ import { Slide1 } from '../components/compHome/Slider/Slides/Slide1'
 import { SwipeDown } from '../components/compHome/SwipeDown.js'
 import { ExpandeTuMarca } from '../components/compHome/ExpandeTuMarca'
 import { Soluciones } from '../components/compHome/Soluciones'
+import { Clientes } from '../components/compHome/Clientes'
 
 const Inicio = () => {
   return (
@@ -19,7 +20,8 @@ const Inicio = () => {
       {/* <Construyendo /> */}
       <RetailNumeros />
       <ProductosYServicios />
-      <Equipo />
+      <Clientes />
+      {/* <Equipo /> */}
       {/* <RetailRenovacion /> */}
       {/* <PaquetesComp /> */}
       <Soluciones />

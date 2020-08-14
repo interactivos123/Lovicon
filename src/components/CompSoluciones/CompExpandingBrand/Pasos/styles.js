@@ -4,9 +4,9 @@ import { Swiper } from 'swiper/react'
 import { theme } from '../../../../theme'
 
 export const ContainerCard = styled('div')({
-  width: '350px',
+  width: 'auto',
   border: '1px solid #000',
-  padding: '20px',
+  padding: '20px 40px 20px 20px',
   height: '100%',
   [theme.breakpoints.down('xs')]: {
     width: '100%'
@@ -32,11 +32,37 @@ export const StepContent = styled(Typography)({
 export const ContainerSwiper = styled(Swiper)({
   '&& .swiper-wrapper': {
     alignItems: 'stretch',
-    boxSizing: 'border-box'
+    boxSizing: 'border-box',
+    overflow: 'visible'
   },
   '&& .swiper-slide': {
-    width: 'auto',
+    width: '25%',
     height: 'auto'
+  },
+  '&& .swiper-button-next , && .swiper-button-prev': {
+    color: '#00E7A0'
+  },
+  '&& .swiper-button-next': {
+    right: '4px'
+  },
+  '&& .swiper-button-prev': {
+    left: '4px'
+  },
+  '&& .swiper-button-next:after , && .swiper-button-prev:after': {
+    fontSize: '24px'
+  },
+  '&& .swiper-button-disabled': {
+    opacity: 0
+  },
+  [theme.breakpoints.down('md')]: {
+    '&& .swiper-slide': {
+      width: '33.33%'
+    }
+  },
+  [theme.breakpoints.down('sm')]: {
+    '&& .swiper-slide': {
+      width: '50%'
+    }
   }
 })
 
