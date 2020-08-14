@@ -48,15 +48,19 @@ export const MyButtonMenu = styled(({ footer, ...other }) => <Button {...other} 
     margin: '0',
     borderRadius: '0',
     '& a': {
-      borderRadius: '0'
+      borderRadius: '0',
+      color: '#fff'
     },
     '&:hover a': {
       background: 'none',
-      color: theme.palette.primary.main
+      color: theme.palette.primary.contrastText
     },
     '& a.active': {
       background: 'none',
-      color: theme.palette.primary.main
+      color: theme.palette.primary.contrastText
+    },
+    '& a:before': {
+      background: '#fff'
     }
   }
 })
@@ -93,7 +97,7 @@ export const SubmenuContainer = styled(Box)({
       flexDirection: 'column'
     },
     '& button': {
-      color: '#000',
+      color: '#fff',
       padding: '10px 20px',
       fontSize: '16px'
     },
@@ -128,6 +132,7 @@ export const PadreSubMenu = styled('div')({
   },
   [theme.breakpoints.down('sm')]: {
     flexDirection: 'column',
+    color: '#fff',
     '& p': {
       textAlign: 'left',
       width: '100%',

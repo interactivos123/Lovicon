@@ -2,6 +2,7 @@ import React from 'react'
 import { Grid, Typography, Hidden } from '@material-ui/core'
 import { Container, TitleBanner, SubtitleBanner } from './styles'
 import { ListItem } from '../../../../generals/ListItem'
+import { Link } from 'gatsby'
 export const Slide1 = () => {
   return (
     <Container container alignItems='center'>
@@ -22,16 +23,24 @@ export const Slide1 = () => {
           <SubtitleBanner>¿Qué necesita tu marca para crecer?</SubtitleBanner>
           <Grid container spacing={2}>
             <Grid item xs={6} sm={6} md={6} lg={6} xl={6}>
-              <ListItem>Diseñar una nueva tienda</ListItem>
+              <Link to='/soluciones/new-store'>
+                <ListItem>Diseñar una nueva tienda</ListItem>
+              </Link>
             </Grid>
             <Grid item xs={6} sm={6} md={6} lg={6} xl={6}>
-              <ListItem>Construir una nueva tienda</ListItem>
+              <Link to='/soluciones/expanding-brand'>
+                <ListItem>Construir una nueva tienda</ListItem>
+              </Link>
             </Grid>
             <Grid item xs={6} sm={6} md={6} lg={6} xl={6}>
-              <ListItem> Renovar mi tienda</ListItem>
+              <Link to='/soluciones/storerestayling'>
+                <ListItem> Renovar mi tienda</ListItem>
+              </Link>
             </Grid>
             <Grid item xs={6} sm={6} md={6} lg={6} xl={6}>
-              <ListItem>Tienda Omnicanal</ListItem>
+              <Link to='/soluciones/omnichannel-store'>
+                <ListItem>Tienda Omnicanal</ListItem>
+              </Link>
             </Grid>
           </Grid>
         </Grid>

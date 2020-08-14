@@ -35,6 +35,9 @@ export const Title = styled('h3')({
 export const GridServiciosS2 = styled(Grid)({
   padding: '40px 100px 60px 100px',
   backgroundColor: '#423E3E',
+  '& a': {
+    textDecoration: 'none'
+  },
   '& .gatsby-image-wrapper': {
     marginTop: '-180px',
     height: '500px'

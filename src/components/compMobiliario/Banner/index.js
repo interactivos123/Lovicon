@@ -7,18 +7,17 @@ import { ListItem } from '../../generals/ListItem'
 
 export const Banner = () => {
   return (
-    <Box mt={12} ml={{ xs: 0, sm: 5, md: 8, lg: 12.5 }}>
+    <Box mt={12} ml={{ xs: 0, sm: 5, md: 8, lg: 20 }}>
       <Grid container>
 
-        <Grid item xs={12} sm={7}>
+        <Grid item xs={12} sm={6}>
           <Box my={5} mx={{ xs: 5, sm: 0 }}>
             <Indicador>Servicios/ Mobiliario </Indicador>
           </Box>
           <Box mb={5} mx={{ xs: 5, sm: 0 }}>
             <Typography variant='subtitle1' color='initial'>
-              Fabricamos el <br />
-              mobiliario de <br />
-              tu tienda
+              Fabricamos el<br />
+              mobiliario de tu tienda
             </Typography>
           </Box>
           <Hidden xsDown>
@@ -30,7 +29,7 @@ export const Banner = () => {
           </Hidden>
         </Grid>
 
-        <MyColumn item xs={12} sm={5}>
+        <MyColumn item xs={12} sm={6}>
           <Image name='bannerMobiliario.jpg' />
           <Hidden smUp>
             <Box my={4} mx={5}>

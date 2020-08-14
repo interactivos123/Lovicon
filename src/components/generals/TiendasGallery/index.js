@@ -36,9 +36,9 @@ export const TiendasGaleria = ({ title, img1, img2, img3 }) => {
           }}
           loop
         >
-          <SwiperSlide><ModalImagen name='arquitectura1.jpg' /></SwiperSlide>
-          <SwiperSlide><ModalImagen name='arquitectura1.jpg' /></SwiperSlide>
-          <SwiperSlide><ModalImagen name='arquitectura1.jpg' /></SwiperSlide>
+          <SwiperSlide><ModalImagen name={img1} /></SwiperSlide>
+          <SwiperSlide><ModalImagen name={img2} /></SwiperSlide>
+          <SwiperSlide><ModalImagen name={img3} /></SwiperSlide>
         </Swiper>
       </Hidden>
     </>

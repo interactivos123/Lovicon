@@ -3,7 +3,7 @@ import { Typography } from '@material-ui/core'
 import { MyTypographyNumero, MyGrid } from './styles'
 import { useCountUp } from 'react-countup'
 
-export const Numero = ({ number, description }) => {
+export const Numero = ({ number, description, preNumber = '' }) => {
   const { countUp, start } = useCountUp({
     start: 0,
     end: number,
@@ -30,7 +30,7 @@ export const Numero = ({ number, description }) => {
   return (
     <MyGrid item ref={element}>
       <MyTypographyNumero variant='subtitle1' color='textSecondary' align='center'>
-        {countUp}
+        {preNumber}{countUp}
       </MyTypographyNumero>
       <Typography variant='body2' color='textSecondary' align='center'>{description}</Typography>
     </MyGrid>

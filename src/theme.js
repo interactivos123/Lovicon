@@ -225,6 +225,9 @@ export const Title = styled('h3')({
     left: 0
   },
   [theme.breakpoints.down('sm')]: {
-    fontSize: '30px'
+    fontSize: '30px',
+    '&:before': {
+      width: '80%'
+    }
   }
 })
