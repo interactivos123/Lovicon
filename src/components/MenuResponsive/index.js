@@ -15,7 +15,7 @@ export const MenuResponsive = (props) => {
       onClose={props.onClose ? props.onClose : null}
     >
       <Grid container justify='flex-end'>
-        <MyIconButton color='primary' aria-label='menu' onClick={() => props.handleOpen()}>
+        <MyIconButton aria-label='menu' onClick={() => props.handleOpen()}>
           <CloseIcon />
         </MyIconButton>
       </Grid>

@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import { GridServiciosS1, Title, GridServiciosS2, ItemServicio, Text, Divisor, ContainerImageMobil } from './style'
 import { Grid, Box, Hidden } from '@material-ui/core'
 import Image from '../../image'
+import { Link } from 'gatsby'
 
 export const ProductosYServicios = () => {
   useEffect(() => {
@@ -47,11 +48,9 @@ export const ProductosYServicios = () => {
   })
   return (
     <>
-      <Hidden xsDown>
-        <GridServiciosS1 container>
-          <Title>Nuestros Servicios</Title>
-        </GridServiciosS1>
-      </Hidden>
+      <GridServiciosS1 container>
+        <Title>Nuestros Servicios</Title>
+      </GridServiciosS1>
       <Hidden smUp>
         <ContainerImageMobil>
           <Image name='ImageServicios.jpg' />
@@ -59,18 +58,26 @@ export const ProductosYServicios = () => {
       </Hidden>
       <GridServiciosS2 container>
         <Grid item xs={12} sm={12} md={7} lg={8} xl={8}>
-          <ItemServicio id='arquitectura'>
-            Arquitectura y construcción
-          </ItemServicio>
-          <ItemServicio id='diseno'>
-            Diseño
-          </ItemServicio>
-          <ItemServicio id='mobiliario'>
-            Mobiliario
-          </ItemServicio>
-          <ItemServicio id='visual'>
-            Visual Merchandising
-          </ItemServicio>
+          <Link to='/servicios/arquitectura-y-construccion'>
+            <ItemServicio id='arquitectura'>
+              Arquitectura y construcción
+            </ItemServicio>
+          </Link>
+          <Link to='/servicios/diseno'>
+            <ItemServicio id='diseno'>
+              Diseño
+            </ItemServicio>
+          </Link>
+          <Link to='/servicios/mobiliario'>
+            <ItemServicio id='mobiliario'>
+              Mobiliario
+            </ItemServicio>
+          </Link>
+          <Link to='/servicios/visual-merchandising'>
+            <ItemServicio id='visual'>
+              Visual Merchandising
+            </ItemServicio>
+          </Link>
         </Grid>
         <Grid item xs={12} sm={12} md={5} lg={4} xl={4}>
           <Hidden smDown>

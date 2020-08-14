@@ -38,7 +38,7 @@ const ListaMenu = (props) => {
             <Grid container>
               <Grid item md={3}>
                 <Link to='/servicios/arquitectura-y-construccion'>
-                  <Button onClick={() => props.handleOpen ? props.handleOpen() : null}>Arquitectura y contrucción</Button>
+                  <Button onClick={() => props.handleOpen ? props.handleOpen() : null}>Arquitectura y construcción</Button>
                 </Link>
               </Grid>
               <Grid item md={3}>

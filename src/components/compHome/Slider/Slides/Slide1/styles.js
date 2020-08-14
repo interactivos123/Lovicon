@@ -5,6 +5,10 @@ import { theme } from '../../../../../theme'
 export const Container = styled(Grid)({
   width: '100%',
   padding: '160px 100px 60px 100px',
+  '& a': {
+    textDecoration: 'none',
+    color: '#000'
+  },
   [theme.breakpoints.down('md')]: {
     padding: '160px 40px 60px 40px'
   },
