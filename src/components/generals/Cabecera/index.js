@@ -1,8 +1,7 @@
 import React from 'react'
-import { Box, Typography } from '@material-ui/core'
-import { ContenedorPadre, LineaHorizontal , Title } from '../../../theme'
-import Image from '../../image'
-import { ContainerBgImage, ContainerImage } from './styles'
+import { Box } from '@material-ui/core'
+import { ContenedorPadre, Title } from '../../../theme''
+import { ContainerBgImage } from './styles'
 
 export const Cabecera = ({ title }) => {
   return (
