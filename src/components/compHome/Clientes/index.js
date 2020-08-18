@@ -15,8 +15,8 @@ export const Clientes = () => {
       <Box my={10}>
         <Title>Clientes</Title>
         <SwiperContainer
-          spaceBetween={40}
-          slidesPerView={5}
+          spaceBetween={0}
+          slidesPerView='auto'
           autoplay={{
             delay: 2500,
             disableOnInteraction: false

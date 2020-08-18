@@ -4,12 +4,33 @@ import { theme } from '../../../theme'
 
 export const SwiperContainer = styled(Swiper)({
   marginTop: '40px',
+  '& .swiper-slide': {
+    width: 'calc(20% - 40px)',
+    margin: '0 20px'
+  },
   '& .gatsby-image-wrapper': {
     width: '150px',
-    height: '130px'
+    height: '130px',
+    margin: '0 auto'
   },
   '& .gatsby-image-wrapper img': {
     objectFit: 'contain !important'
+  },
+  [theme.breakpoints.down('md')]: {
+    '& .swiper-slide': {
+      width: 'calc(25% - 40px)'
+    }
+  },
+  [theme.breakpoints.down('sm')]: {
+    '& .swiper-slide': {
+      width: 'calc(33.33% - 40px)'
+    }
+  },
+  [theme.breakpoints.down('xs')]: {
+    '& .swiper-slide': {
+      width: '100%',
+      margin: '0'
+    }
   }
 })
 

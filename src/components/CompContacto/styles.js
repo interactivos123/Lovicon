@@ -1,31 +1,17 @@
-import { FormControl, Select, TextField, Typography } from '@material-ui/core'
 import { styled } from '@material-ui/core/styles'
-import { theme } from '../../theme'
+import { Grid, ListItem } from '@material-ui/core'
 
-export const MyFormControl = styled(FormControl)({
-  maxWidth: '600px',
-  marginTop: 8
-})
-
-export const MySelect = styled(Select)({
-
-})
-
-export const TwoInputs = styled('div')({
+export const GridData = styled(Grid)({
   display: 'flex',
-  justifyContent: 'space-between',
-  [theme.breakpoints.down('xs')]: {
-    flexDirection: 'column'
-  }
+  flexDirection: 'column',
+  justifyContent: 'space-between'
 })
 
-export const MyInputText = styled(TextField)({
-  width: 'calc(50% - 12px)',
-  [theme.breakpoints.down('xs')]: {
-    width: '100%'
-  }
+export const Url = styled('a')({
+  textDecoration: 'none',
+  color: '#000000'
 })
 
-export const Terms = styled(Typography)({
-  textDecoration: 'none'
+export const StyledListItem = styled(ListItem)({
+  paddingLeft: 0
 })
