@@ -1,6 +1,6 @@
 import React from 'react'
 import { GridData, Url, StyledListItem } from './styles'
-import { Box, Grid, Typography, ListItem, ListItemIcon, ListItemText } from '@material-ui/core'
+import { Box, Grid, Typography, ListItemIcon, ListItemText } from '@material-ui/core'
 import { Room, Phone, PhoneIphone, Email } from '@material-ui/icons'
 import { FormRegister } from './FormRegister'
 import { Title } from '../../theme'
