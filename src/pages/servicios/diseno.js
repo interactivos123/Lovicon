@@ -9,9 +9,7 @@ const Diseno = () => {
       <Banner />
       <TiendasGaleria
         title='Nuestros diseños'
-        img1='diseno-gallery-1.jpg'
-        img2='diseno-gallery-2.jpg'
-        img3='diseno-gallery-3.jpg'
+        imagenes={['diseno-gallery-1.jpg', 'diseno-gallery-2.jpg', 'diseno-gallery-3.jpg', 'diseno-gallery-1.jpg', 'diseno-gallery-2.jpg', 'diseno-gallery-3.jpg']}
       />
       <ConstruirTuTienda title='¿Quieres diseñar tu tienda?' />
     </>

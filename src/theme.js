@@ -117,8 +117,8 @@ export const theme = createMuiTheme({
 
 theme.typography.subtitle1 = {
   fontFamily: ['Nunito Sans', '-apple-system'].join(','),
-  fontSize: 40,
-  fontWeight: 800,
+  fontSize: 50,
+  fontWeight: 600,
   lineHeight: '1',
   [theme.breakpoints.down('sm')]: {
     fontSize: 32
@@ -130,7 +130,7 @@ theme.typography.subtitle1 = {
 
 theme.typography.h6 = {
   fontFamily: ['Nunito Sans', '-apple-system'].join(','),
-  fontSize: 40,
+  fontSize: 30,
   fontWeight: 300,
   lineHeight: '1',
   [theme.breakpoints.down('sm')]: {

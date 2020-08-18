@@ -50,7 +50,7 @@ const Footer = () => {
 
       </MyContainerFooter>
       <MyContainerColombia container spacing={1} justify='center'>
-        <Box py={3}>
+        <Box py={2}>
           <Typography variant='body1' color='primary'>Hecho con ❤ en Colombia | Lovicon Retail © 2020 | Todos los derechos reservados</Typography>
         </Box>
       </MyContainerColombia>

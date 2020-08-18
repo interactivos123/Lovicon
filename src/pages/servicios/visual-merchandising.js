@@ -9,9 +9,7 @@ const VisualMerchandising = () => {
       <Banner />
       <TiendasGaleria
         title='Nuestro Visual Merchandising '
-        img1='visual-1.jpg'
-        img2='visual-2.jpg'
-        img3='visual-3.jpg'
+        imagenes={['visual-1.jpg', 'visual-2.jpg', 'visual-3.jpg', 'visual-1.jpg', 'visual-2.jpg', 'visual-3.jpg']}
       />
       <ConstruirTuTienda title='¿Quieres fabricar el mobiliario para tu tienda?' />
     </>

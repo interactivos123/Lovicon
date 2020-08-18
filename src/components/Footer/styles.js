@@ -18,21 +18,19 @@ export const MyColumn1 = styled(Grid)({
     maxWidth: '250px'
   },
   '& a': {
-    padding: '6px',
     display: 'inline-block',
-    maxWidth: '36px',
-    maxHeight: '36px',
-    boxShadow: '0px 0px 10px 0px rgba(0,0,0,0.55)',
+    maxWidth: '40px',
+    maxHeight: '40px',
     transition: '.3s'
   },
-  '& a:hover': {
-    background: '#000'
+  '& a svg': {
+    fontSize: '26px'
   },
   '& a svg path': {
     transition: '.3s'
   },
   '& a:hover svg path': {
-    fill: '#fff'
+    fill: '#ef4d58'
   },
   '& .MuiBox-root': {
     display: 'flex',
@@ -78,7 +76,7 @@ export const MyLinkTerminos = styled('li')({
   transition: '.3s',
   textDecoration: 'none',
   fontWeight: '500',
-  margin: '20px 0 0 15px',
+  margin: '10px 0 0 15px',
   listStyle: 'none',
   '& a': {
     textDecoration: 'none',

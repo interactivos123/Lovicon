@@ -10,25 +10,22 @@ import SwiperCore, { Pagination, Autoplay } from 'swiper'
 
 SwiperCore.use([Pagination, Autoplay])
 
-export const TiendasGaleria = ({ title, img1, img2, img3 }) => {
+export const TiendasGaleria = ({ title, imagenes }) => {
   return (
     <>
       <ContenedorPadre>
         <Box mt={10}>
           <Title>{title}</Title>
           <Box my={5}>
-            <Imagenes img1={img1} img2={img2} img3={img3} />
+            <Imagenes imagenes={imagenes} />
           </Box>
         </Box>
       </ContenedorPadre>
+
       <Hidden mdUp>
         <Swiper
           spaceBetween={0}
           slidesPerView={1}
-          // pagination={{
-          //   clickable: true,
-          //   type: 'fraction'
-          // }}
           className={SwiperStyles}
           autoplay={{
             delay: 2500,
@@ -36,11 +33,14 @@ export const TiendasGaleria = ({ title, img1, img2, img3 }) => {
           }}
           loop
         >
-          <SwiperSlide><ModalImagen name={img1} /></SwiperSlide>
-          <SwiperSlide><ModalImagen name={img2} /></SwiperSlide>
-          <SwiperSlide><ModalImagen name={img3} /></SwiperSlide>
+          {imagenes.map((img, id) =>
+            <SwiperSlide key={id}>
+              <ModalImagen name={img} />
+            </SwiperSlide>
+          )}
         </Swiper>
       </Hidden>
+
     </>
   )
 }

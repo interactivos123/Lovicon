@@ -10,7 +10,7 @@ export const MyAppBar = styled(AppBar)({
   justifyContent: 'center',
   boxShadow: 'none',
   '& .gatsby-image-wrapper': {
-    width: '180px',
+    width: '160px',
     transition: '.3s'
   },
   '&.sticky': {
@@ -18,7 +18,7 @@ export const MyAppBar = styled(AppBar)({
     height: '60px'
   },
   '&.sticky .gatsby-image-wrapper': {
-    width: '140px'
+    width: '130px'
   },
   '&.sticky .submenu': {
     top: '60px'

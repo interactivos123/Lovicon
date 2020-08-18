@@ -1,31 +1,41 @@
 import React from 'react'
-import { Box, Grid, Hidden } from '@material-ui/core'
+import { Box, Hidden } from '@material-ui/core'
 import { ModalImagen } from '../ModalImagen'
-import { MyGridExt, MyGridCenter } from './style'
+import { ContainerSwiper } from './style'
 
-export const Imagenes = ({ img1, img2, img3 }) => {
+import { SwiperSlide } from 'swiper/react'
+import SwiperCore, { Autoplay, Navigation } from 'swiper'
+import SwiperStyles from 'swiper/swiper-bundle.min.css'
+
+SwiperCore.use([Autoplay, Navigation])
+
+export const Imagenes = ({ imagenes }) => {
   return (
     <>
       <Hidden smDown>
-        <Grid container justify='center' alignItems='center'>
+        <Box>
+          <ContainerSwiper
+            spaceBetween={0}
+            slidesPerView='auto'
+            className={SwiperStyles}
+            autoplay={{
+              delay: 5000,
+              disableOnInteraction: false
+            }}
+            navigation
+            loop
+          >
+            {imagenes.map((img, id) =>
+              <SwiperSlide key={id}>
+                <Box mx={1}>
+                  <ModalImagen name={img} />
+                </Box>
+              </SwiperSlide>
+            )}
 
-          <MyGridExt item>
-            <Box mr={2}>
-              <ModalImagen name={img1} />
-            </Box>
-          </MyGridExt>
-          <MyGridCenter item>
-            <Box mx={1}>
-              <ModalImagen name={img2} />
-            </Box>
-          </MyGridCenter>
-          <MyGridExt item>
-            <Box ml={2}>
-              <ModalImagen name={img3} />
-            </Box>
-          </MyGridExt>
+          </ContainerSwiper>
 
-        </Grid>
+        </Box>
       </Hidden>
     </>
   )

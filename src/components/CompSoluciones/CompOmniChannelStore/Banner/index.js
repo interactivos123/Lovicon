@@ -6,7 +6,7 @@ import Image from '../../../image'
 
 export const Banner = () => {
   return (
-    <Box mt={12} ml={{ xs: 0, sm: 5, md: 8, lg: 12.5 }}>
+    <Box mt={12} ml={{ xs: 0, sm: 5, md: 8, lg: 20 }}>
       <Grid container>
 
         <Grid item xs={12} sm={7}>
@@ -15,9 +15,8 @@ export const Banner = () => {
           </Box>
           <Box mb={5} mx={{ xs: 2.5, sm: 0 }}>
             <Typography variant='subtitle1' color='initial'>
-              Acercamos tu<br />
-              marca a la<br />
-              omnicanalidad
+              Acercamos tu marca<br />
+              a la omnicanalidad
             </Typography>
           </Box>
           <Hidden xsDown>

@@ -6,7 +6,7 @@ import Image from '../../../image'
 
 export const Banner = () => {
   return (
-    <Box mt={12} ml={{ xs: 0, sm: 5, md: 8, lg: 12.5 }}>
+    <Box mt={12} ml={{ xs: 0, sm: 5, md: 8, lg: 20 }}>
       <Grid container>
 
         <Grid item xs={12} sm={7}>

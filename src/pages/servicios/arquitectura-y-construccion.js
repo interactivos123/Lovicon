@@ -9,6 +9,7 @@ const ArquitecturaYConstruccion = () => {
       <Banner />
       <TiendasGaleria
         title='Nuestras tiendas'
+        imagenes={['arquitectura1.jpg', 'arquitectura2.jpg', 'arquitectura3.jpg', 'arquitectura1.jpg', 'arquitectura2.jpg', 'arquitectura3.jpg']}
         img1='arquitectura1.jpg'
         img2='arquitectura2.jpg'
         img3='arquitectura3.jpg'

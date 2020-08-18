@@ -13,6 +13,10 @@ export const ContainerSwipeDown = styled('section')({
     left: '100px',
     cursor: 'pointer'
   },
+  '& .swiper-container > div::after': {
+    color: '#fff',
+    fontSize: '35px'
+  },
   [theme.breakpoints.down('md')]: {
     '& svg': {
       left: '40px'

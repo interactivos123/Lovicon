@@ -1,5 +1,5 @@
 import React from 'react'
-import { Facebook, Instagram, Twitter } from '@material-ui/icons'
+import { Facebook, Instagram, LinkedIn } from '@material-ui/icons'
 
 export const RedesSociales = () => {
   return (
@@ -11,7 +11,7 @@ export const RedesSociales = () => {
         <Instagram color='primary' />
       </a>
       <a href='https://www.google.com.co/' target='_blanck'>
-        <Twitter color='primary' />
+        <LinkedIn color='primary' />
       </a>
     </>
   )

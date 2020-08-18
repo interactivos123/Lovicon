@@ -9,9 +9,7 @@ const Mobiliario = () => {
       <Banner />
       <TiendasGaleria
         title='Nuestros mobiliario'
-        img1='mobiliario1.jpg'
-        img2='mobiliario2.jpg'
-        img3='mobiliario3.jpg'
+        imagenes={['mobiliario1.jpg', 'mobiliario2.jpg', 'mobiliario3.jpg', 'mobiliario1.jpg', 'mobiliario2.jpg', 'mobiliario3.jpg']}
       />
       <ConstruirTuTienda title='¿Quieres fabricar el mobiliario para tu tienda?' />
     </>
