@@ -1,6 +1,7 @@
 import { styled } from '@material-ui/core/styles'
 import { Grid } from '@material-ui/core'
 import { theme } from '../../../theme'
+import { Link } from 'gatsby'
 
 export const Container = styled(Grid)({
   width: '100%',
@@ -56,4 +57,9 @@ export const SubtitleBanner = styled('h4')({
     fontSize: '18px',
     lineHeight: '24px'
   }
+})
+
+export const StyledLink = styled(Link)({
+  color: '#000000',
+  textDecoration: 'none'
 })

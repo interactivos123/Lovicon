@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Title, Text, SubtitleBanner } from './styles'
+import { Container, Title, Text, SubtitleBanner, StyledLink } from './styles'
 import { ListItem } from '../../generals/ListItem'
 import { Grid, Hidden, Box } from '@material-ui/core'
 
@@ -12,16 +12,24 @@ export const ExpandeTuMarca = () => {
             <SubtitleBanner>¿Qué necesita tu marca para crecer?</SubtitleBanner>
             <Grid container spacing={2}>
               <Grid item xs={6} sm={6} md={6} lg={6} xl={6}>
-                <ListItem>Diseñar una nueva tienda</ListItem>
+                <StyledLink to='/soluciones/new-store'>
+                  <ListItem>Diseñar una nueva tienda</ListItem>
+                </StyledLink>
               </Grid>
               <Grid item xs={6} sm={6} md={6} lg={6} xl={6}>
-                <ListItem>Construir una nueva tienda</ListItem>
+                <StyledLink to='/soluciones/expanding-brand'>
+                  <ListItem>Construir una nueva tienda</ListItem>
+                </StyledLink>
               </Grid>
               <Grid item xs={6} sm={6} md={6} lg={6} xl={6}>
-                <ListItem> Renovar mi tienda</ListItem>
+                <StyledLink to='/soluciones/storerestayling'>
+                  <ListItem> Renovar mi tienda</ListItem>
+                </StyledLink>
               </Grid>
               <Grid item xs={6} sm={6} md={6} lg={6} xl={6}>
-                <ListItem>Tienda Omnicanal</ListItem>
+                <StyledLink to='/soluciones/omnichannel-store'>
+                  <ListItem>Tienda Omnicanal</ListItem>
+                </StyledLink>
               </Grid>
             </Grid>
           </Grid>
