@@ -1,6 +1,7 @@
 import { styled } from '@material-ui/core/styles'
 import { Button } from '@material-ui/core'
 import { theme } from '../../../theme'
+import { Link } from 'gatsby'
 
 export const MyButton = styled(Button)({
   color: '#FF4A55',
@@ -19,4 +20,11 @@ export const MyButton = styled(Button)({
     fontSize: '20px',
     padding: '15px'
   }
+})
+
+export const StyledLink = styled(Link)({
+  textDecoration: 'none'
+})
+export const Anchor = styled('a')({
+  textDecoration: 'none'
 })
