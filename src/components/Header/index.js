@@ -2,6 +2,7 @@ import React from 'react'
 import { MenuResponsive } from '../MenuResponsive'
 import { MenuPC } from '../MenuPC'
 import { Hidden } from '@material-ui/core'
+import WhatsAppButton from '../generals/WhatsAppButton'
 
 const Header = () => {
   const [open, setOpen] = React.useState(false)
@@ -21,6 +22,7 @@ const Header = () => {
           handleOpen={handleOpen}
         />
       </Hidden>
+      <WhatsAppButton />
     </>
   )
 }

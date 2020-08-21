@@ -13,7 +13,7 @@ export const MyContainerFooter = styled(Grid)({
 export const MyColumn1 = styled(Grid)({
   display: 'flex',
   flexDirection: 'column',
-  justifyContent: 'space-between',
+  justifyContent: 'space-around',
   '& .gatsby-image-wrapper': {
     maxWidth: '250px'
   },
@@ -93,4 +93,10 @@ export const MyContainerColombia = styled(Grid)({
       textAlign: 'center'
     }
   }
+})
+
+export const Anchor = styled('a')({
+  textDecoration: 'none',
+  color: '#000',
+  marginBottom: '16px'
 })

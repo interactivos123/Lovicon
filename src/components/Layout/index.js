@@ -6,7 +6,7 @@ import Header from '../Header'
 import Footer from '../Footer'
 import { ThemeProvider } from '@material-ui/core/styles'
 import { theme } from '../../theme'
-
+import WhatsAppButton from '../generals/WhatsAppButton'
 export default function Layout ({ children }) {
   return (
     <>

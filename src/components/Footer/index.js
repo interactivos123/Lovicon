@@ -5,7 +5,7 @@ import { RedesSociales } from '../RedesSociales'
 import { Phone, Email, Room } from '@material-ui/icons'
 import { CajaDeIcono } from '../cajaDeIcono'
 import { ContenedorPadre } from '../../theme'
-import { MyContainerFooter, MyColumn1, MyContainerMenu, MyColumn2, MyLinkTerminos, MyContainerColombia } from './styles'
+import { MyContainerFooter, MyColumn1, MyContainerMenu, MyColumn2, MyLinkTerminos, MyContainerColombia, Anchor } from './styles'
 import { Link } from 'gatsby'
 
 const Footer = () => {
@@ -21,9 +21,15 @@ const Footer = () => {
         </MyColumn1>
 
         <MyColumn2 item xs={12} sm={6} md={5}>
-          <CajaDeIcono title='Llámanos o escríbenos' description='(+2) 571 123 4560     (+57) 123 456 789' Icono={<Phone color='primary' />} />
-          <CajaDeIcono title='E-mail' description='info@lovicon.com' Icono={<Email color='primary' />} />
-          <CajaDeIcono title='Dirección' description='Cra. 123 No. 45A - 67 Bogotá D. C., Colombia' Icono={<Room color='primary' />} />
+          <Anchor href='tel:573182664538'>
+            <CajaDeIcono title='Llámanos o escríbenos' description='(571) 5472239    318 2664538' Icono={<Phone color='primary' />} />
+          </Anchor>
+          <Anchor href='mailto:comercial1@loviconretail.co'>
+            <CajaDeIcono title='E-mail' description='comercial1@loviconretail.co' Icono={<Email color='primary' />} />
+          </Anchor>
+          <Anchor href='https://goo.gl/maps/LxGzhipR69VnMsZV7' target='_blank'>
+            <CajaDeIcono title='Dirección' description='Cra 27 C # 71 B 70. Bogotá-Colombia.' Icono={<Room color='primary' />} />
+          </Anchor>
         </MyColumn2>
 
         <Hidden smDown>
@@ -42,7 +48,7 @@ const Footer = () => {
                 <Link to='/contactenos'>Contáctenos</Link>
               </MyLinkTerminos>
               <MyLinkTerminos>
-                <Link to='/'>Términos y condiciones</Link>
+                <Link to='/tratamiento-de-datos'>Términos y condiciones</Link>
               </MyLinkTerminos>
             </MyContainerMenu>
           </Grid>
@@ -51,7 +57,7 @@ const Footer = () => {
       </MyContainerFooter>
       <MyContainerColombia container spacing={1} justify='center'>
         <Box py={2}>
-          <Typography variant='body1' color='primary'>Hecho con ❤ en Colombia | Lovicon Retail © 2020 | Todos los derechos reservados</Typography>
+          <Typography variant='body1' color='primary'>Lovicon Retail © 2020 | Todos los derechos reservados</Typography>
         </Box>
       </MyContainerColombia>
     </ContenedorPadre>

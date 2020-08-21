@@ -85,7 +85,7 @@ const ListaMenu = (props) => {
               </Grid>
               <Grid item md={3}>
                 <Link to='/soluciones/storerestayling'>
-                  <Button onClick={() => props.handleOpen ? props.handleOpen() : null}>Storerestayling</Button>
+                  <Button onClick={() => props.handleOpen ? props.handleOpen() : null}>Store-Restyling</Button>
                 </Link>
               </Grid>
             </Grid>

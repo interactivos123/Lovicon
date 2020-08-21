@@ -5,10 +5,12 @@ import { Pasos } from '../../components/CompSoluciones/CompExpandingBrand/Pasos'
 import { BotonesContacto } from '../../components/CompSoluciones/BotonesContacto'
 import { SiguientePaso } from '../../components/CompSoluciones/CompExpandingBrand/SiguientePaso'
 import { LinksSoluciones } from '../../components/CompSoluciones/LinksSoluciones'
+import SEO from '../../components/seo'
 
 const ExpandingBrand = () => {
   return (
     <>
+      <SEO title='Expanding Brand' />
       <Banner />
       <Como />
       <Pasos />

@@ -1,12 +1,13 @@
 import { styled } from '@material-ui/styles'
 import { Box, Typography } from '@material-ui/core'
 import { theme } from '../../../theme'
-import Decoracion from '../../../images/bgdecoracion.jpg'
+import Decoracion from '../../../images/2.jpg'
 
 export const MyBoxBackground = styled(Box)({
   backgroundImage: `url(${Decoracion})`,
   backgroundRepeat: 'no-repeat',
-  backgroundSize: 'cover'
+  backgroundSize: 'cover',
+  backgroundPosition: 'center'
   // marginTop: '-100px',
   // [theme.breakpoints.down('sm')]: {
   //   marginTop: '40px'

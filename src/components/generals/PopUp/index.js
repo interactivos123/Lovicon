@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import { Overlay, ContainerPopUp, ButtonClose } from './styles'
 import { Close } from '../../icons/Close'
 
-const ClosePopUp = (setOpen, name, empresa, email, tel, typeUser) => {
+const ClosePopUp = (setOpen, name, empresa, email, tel, typeUser, terms) => {
   setOpen(false)
   if (name && empresa && email && tel && typeUser) {
     name.reset()
@@ -10,16 +10,17 @@ const ClosePopUp = (setOpen, name, empresa, email, tel, typeUser) => {
     email.reset()
     tel.reset()
     typeUser.reset()
+    terms.reset()
   }
 }
 
-const ComponentPopUp = ({ children, setOpen, name, empresa, email, tel, typeUser }) => {
+const ComponentPopUp = ({ children, setOpen, name, empresa, email, tel, typeUser, terms }) => {
   console.log(setOpen)
   useEffect(() => {
     const overlay = document.querySelector('#overlay')
     overlay.addEventListener('click', (e) => {
       if (e.target.id === 'overlay') {
-        ClosePopUp(setOpen, name, empresa, email, tel, typeUser)
+        ClosePopUp(setOpen, name, empresa, email, tel, typeUser, terms)
       }
     })
   })
@@ -27,7 +28,7 @@ const ComponentPopUp = ({ children, setOpen, name, empresa, email, tel, typeUser
   return (
     <Overlay id='overlay'>
       <ContainerPopUp>
-        <ButtonClose onClick={() => ClosePopUp(setOpen, name, empresa, email, tel, typeUser)}>
+        <ButtonClose onClick={() => ClosePopUp(setOpen, name, empresa, email, tel, typeUser, terms)}>
           <Close />
         </ButtonClose>
         {children}

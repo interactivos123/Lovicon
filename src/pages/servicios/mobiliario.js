@@ -2,14 +2,16 @@ import React from 'react'
 import { Banner } from '../../components/compMobiliario/Banner'
 import { TiendasGaleria } from '../../components/generals/TiendasGallery'
 import { ConstruirTuTienda } from '../../components/generals/ConstruirTienda'
+import SEO from '../../components/seo'
 
 const Mobiliario = () => {
   return (
     <>
+      <SEO title='Mobiliario' />
       <Banner />
       <TiendasGaleria
         title='Nuestros mobiliario'
-        imagenes={['mobiliario1.jpg', 'mobiliario2.jpg', 'mobiliario3.jpg', 'mobiliario1.jpg', 'mobiliario2.jpg', 'mobiliario3.jpg']}
+        imagenes={['1mobiliario.jpg', '2mobiliario.jpg', '3mobiliario.jpg', '4mobiliario.jpg', '5mobiliario.jpg', '6mobiliario.jpg', '7mobiliario.jpg', '8mobiliario.jpg', '9mobiliario.jpg', '10mobiliario.jpg', '11mobiliario.jpg', '12mobiliario.jpg', '13mobiliario.jpg', '14mobiliario.jpg']}
       />
       <ConstruirTuTienda title='¿Quieres fabricar el mobiliario para tu tienda?' />
     </>

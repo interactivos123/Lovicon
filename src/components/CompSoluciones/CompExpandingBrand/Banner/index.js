@@ -24,7 +24,7 @@ export const Banner = () => {
             <Box mt={10} mr={10}>
               <Typography variant='p'>
                 Si vas a construir una nueva tienda para tu marca significa que:<br />
-                1. Tu marca se encuentra en expansión y quieres aumentar tus canales de venta físicos ubicando tu tienda de forma estrategica y cercana a tu segmento de mercado. Ya tienes varias tiendas con un formato exitoso y necesitas replicarlo. Ó<br />
+                1. Tu marca se encuentra en expansión y quieres aumentar tus canales de venta físicos ubicando tu tienda de forma estratégica y cercana a tu segmento de mercado. Ya tienes varias tiendas con un formato exitoso y necesitas replicarlo. Ó<br />
                 2. Cuentas con el diseño de la tienda y requieres de  una firma que se encargue de volverlo realidad, es decir construirlo.<br />
               </Typography>
             </Box>
@@ -45,7 +45,7 @@ export const Banner = () => {
               <Box mt={10}>
                 <Typography variant='p'>
                   Si vas a construir una nueva tienda para tu marca significa que:<br />
-                  1. Tu marca se encuentra en expansión y quieres aumentar tus canales de venta físicos ubicando tu tienda de forma estrategica y cercana a tu segmento de mercado. Ya tienes varias tiendas con un formato exitoso y necesitas replicarlo. Ó<br />
+                  1. Tu marca se encuentra en expansión y quieres aumentar tus canales de venta físicos ubicando tu tienda de forma estratégica y cercana a tu segmento de mercado. Ya tienes varias tiendas con un formato exitoso y necesitas replicarlo. Ó<br />
                   2. Cuentas con el diseño de la tienda y requieres de  una firma que se encargue de volverlo realidad, es decir construirlo.<br />
                 </Typography>
               </Box>

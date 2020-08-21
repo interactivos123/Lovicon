@@ -25,8 +25,8 @@ export const Banner = () => {
             <Box mt={10} mr={10}>
               <Typography variant='p'>
                 Si quieres diseñar una nueva tienda para tu marca significa que: <br />
-                1. Cuentas con un portafolio de productos establecido y quieres ener una relación más directa con tus clientes en un espacio físico en el que pueden comprar y experimentar lo que ofreces. Ó<br />
-                2. Ya tienes una tienda física pero descubriste que tiene un formato desactualizado, no estás vendiendo lo suficiente o estás perdiendo clientes.<br />
+                1. Cuentas con un portafolio de productos establecido y quieres tener una relación más directa con tus clientes en un espacio físico en el que pueden comprar y experimentar lo que ofreces. Ó<br />
+                2. Ya tienes una tienda física pero descubriste que tiene un formato desactualizado, no estás vendiendo lo suficiente ó estás perdiendo clientes.<br />
               </Typography>
             </Box>
           </Hidden>
@@ -39,8 +39,8 @@ export const Banner = () => {
               <Box mt={10}>
                 <Typography variant='p'>
                   Si quieres diseñar una nueva tienda para tu marca significa que: <br />
-                  1. Cuentas con un portafolio de productos establecido y quieres ener una relación más directa con tus clientes en un espacio físico en el que pueden comprar y experimentar lo que ofreces. Ó<br />
-                  2. Ya tienes una tienda física pero descubriste que tiene un formato desactualizado, no estás vendiendo lo suficiente o estás perdiendo clientes.<br />
+                  1. Cuentas con un portafolio de productos establecido y quieres tener una relación más directa con tus clientes en un espacio físico en el que pueden comprar y experimentar lo que ofreces. Ó<br />
+                  2. Ya tienes una tienda física pero descubriste que tiene un formato desactualizado, no estás vendiendo lo suficiente ó estás perdiendo clientes.<br />
                 </Typography>
               </Box>
             </Box>

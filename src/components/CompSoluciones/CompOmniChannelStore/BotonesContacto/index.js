@@ -12,7 +12,9 @@ export const BotonesContacto = () => {
       <Grid container>
         <Grid item xs={12} sm={12} md={4} lg={4} xl={4}>
           <Box my={[1.25, 1.25, 0]} height='100%'>
-            <MyButton>Realiza una llamada inmediata</MyButton>
+            <a href='tel:3137898533'>
+              <MyButton>Realiza una llamada inmediata</MyButton>
+            </a>
           </Box>
         </Grid>
         <Grid item xs={12} sm={12} md={4} lg={4} xl={4}>

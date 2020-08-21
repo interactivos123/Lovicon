@@ -2,13 +2,15 @@ import React from 'react'
 import { Banner } from '../../components/CompSoluciones/CompOmniChannelStore/Banner'
 import { Como } from '../../components/CompSoluciones/CompOmniChannelStore/Como'
 import { Ventajas } from '../../components/CompSoluciones/CompOmniChannelStore/Ventajas'
-import { BotonesContacto } from '../../components/CompSoluciones/CompOmniChannelStore/BotonesContacto'
+import { BotonesContacto } from '../../components/CompSoluciones/BotonesContacto'
 import { SiguientePaso } from '../../components/CompSoluciones/CompOmniChannelStore/SiguientePaso'
 import { LinksSoluciones } from '../../components/CompSoluciones/LinksSoluciones'
+import SEO from '../../components/seo'
 
 const OmniChannelStore = () => {
   return (
     <>
+      <SEO title='Omnichannel Store' />
       <Banner />
       <Como />
       <Ventajas />

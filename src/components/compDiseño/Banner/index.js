@@ -24,7 +24,7 @@ export const Banner = () => {
             <ListItem>Fachada</ListItem>
             <ListItem>Avisos</ListItem>
             <ListItem>Mobiliario</ListItem>
-            <ListItem>Señaletica</ListItem>
+            <ListItem>Señalética</ListItem>
             <ListItem>Exhibidores</ListItem>
           </Hidden>
         </Grid>

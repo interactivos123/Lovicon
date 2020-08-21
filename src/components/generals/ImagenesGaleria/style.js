@@ -23,6 +23,16 @@ export const ContainerSwiper = styled(Swiper)({
     height: 'auto',
     transition: '.3s'
   },
+  '&& .swiper-slide .gatsby-image-wrapper': {
+    height: '250px'
+  },
+  '&& .swiper-slide .gatsby-image-wrapper': {
+    height: '250px',
+    transition: '.3s'
+  },
+  '&& .swiper-slide.swiper-slide-next .gatsby-image-wrapper': {
+    height: '300px'
+  },
   '&& .swiper-slide.swiper-slide-next': {
     width: '40%'
   },

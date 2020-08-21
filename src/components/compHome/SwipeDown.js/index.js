@@ -17,9 +17,13 @@ export const SwipeDown = () => {
         loop
         navigation
       >
-        <SwiperSlide><Image name='BackgroundSwipeDown.jpg' /></SwiperSlide>
-        <SwiperSlide><Image name='arquitectura3.jpg' /></SwiperSlide>
-        <SwiperSlide><Image name='ArquitecturaConstruccion.png' /></SwiperSlide>
+        <SwiperSlide><Image name='1.jpg' /></SwiperSlide>
+        <SwiperSlide><Image name='3.jpg' /></SwiperSlide>
+        <SwiperSlide><Image name='4.jpg' /></SwiperSlide>
+        <SwiperSlide><Image name='5.jpg' /></SwiperSlide>
+        <SwiperSlide><Image name='6.jpg' /></SwiperSlide>
+        <SwiperSlide><Image name='7.jpg' /></SwiperSlide>
+        <SwiperSlide><Image name='8.jpg' /></SwiperSlide>
       </Swiper>
       <AnchorLink to='/#expande'>
         <SwipeDownIcon />

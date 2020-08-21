@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
-import { Box, InputLabel, TextField } from '@material-ui/core'
+import { Box, InputLabel, TextField, FormControlLabel, Typography, Checkbox } from '@material-ui/core'
 import { MyFormControl, MySelect, Form, ButtonForm, ContainerMessageSent, Title, TextSent } from './styles'
 import { useInput } from '../../../hooks/useInput'
 import { PopUp } from '../../generals/PopUp'
 import { IconMessageSent } from '../../icons/IconMessageSent'
+import { Link } from 'gatsby'
 
 export const FormRegister = () => {
   const name = useInput('')
@@ -11,6 +12,7 @@ export const FormRegister = () => {
   const email = useInput('')
   const tel = useInput('')
   const typeUser = useInput('')
+  const terms = useInput('')
 
   const [open, setOpen] = useState(false)
   const [status, setStatus] = useState('')
@@ -60,10 +62,17 @@ export const FormRegister = () => {
               <option value='Otro'>Otro </option>
             </MySelect>
           </MyFormControl>
+          <FormControlLabel
+            control={
+              <Checkbox color='primary' required value={terms.value} onChange={terms.onChange} />
+            }
+            margin='normal'
+            label={<Typography color='primary'>Estoy deacuerdo con los <Link to='/tratamiento-de-datos'>Términos y Condiciones</Link></Typography>}
+          />
           <ButtonForm>Enviar Mensaje</ButtonForm>
         </Form>
       </MyFormControl>
-      <PopUp open={open} setOpen={setOpen} name={name} empresa={empresa} email={email} tel={tel} typeUser={typeUser}>
+      <PopUp open={open} setOpen={setOpen} name={name} empresa={empresa} email={email} tel={tel} typeUser={typeUser} terms={terms}>
         <MessageSent name={name.value} />
       </PopUp>
     </Box>

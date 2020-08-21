@@ -5,10 +5,12 @@ import { Pasos } from '../../components/CompSoluciones/CompStoreRestayling/Pasos
 import { BotonesContacto } from '../../components/CompSoluciones/BotonesContacto'
 import { SiguientePaso } from '../../components/CompSoluciones/CompStoreRestayling/SiguientePaso'
 import { LinksSoluciones } from '../../components/CompSoluciones/LinksSoluciones'
+import SEO from '../../components/seo'
 
 const StoreRestayling = () => {
   return (
     <>
+      <SEO title='Store-Restyling' />
       <Banner />
       <Como />
       <Pasos />
