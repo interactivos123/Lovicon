@@ -41,7 +41,7 @@ export const FormRegister = () => {
     <Box display='flex' justifyContent='center' width='100%' mt={2.5}>
 
       <MyFormControl variant='outlined' fullWidth>
-        <Form action='https://formspree.io/mknqaogj' method='POST' onSubmit={submitForm}>
+        <Form action='https://formspree.io/mlepkkeg' method='POST' onSubmit={submitForm}>
           <TextField id='name' label='Nombre' name='Nombre' variant='outlined' margin='normal' value={name.value} onChange={name.onChange} />
           <TextField id='empresa' label='Empresa' name='Empresa' variant='outlined' margin='normal' value={empresa.value} onChange={empresa.onChange} />
           <TextField type='email' id='email' label='Email' name='_replyto' variant='outlined' margin='normal' required value={email.value} onChange={email.onChange} />
