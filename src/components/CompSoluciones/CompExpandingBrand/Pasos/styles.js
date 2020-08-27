@@ -40,7 +40,7 @@ export const ContainerSwiper = styled(Swiper)({
     height: 'auto'
   },
   '&& .swiper-button-next , && .swiper-button-prev': {
-    color: '#00E7A0'
+    color: '#FF4A55'
   },
   '&& .swiper-button-next': {
     right: '4px'

@@ -6,9 +6,9 @@ import { Slide } from '../SliderSoluciones/Slide'
 import SwiperStyles from 'swiper/swiper-bundle.min.css'
 
 import { SwiperSlide } from 'swiper/react'
-import SwiperCore, { Autoplay, Navigation } from 'swiper'
+import SwiperCore, { Navigation } from 'swiper'
 
-SwiperCore.use([Navigation, Autoplay])
+SwiperCore.use([Navigation])
 
 export const Soluciones = () => {
   return (
@@ -23,10 +23,6 @@ export const Soluciones = () => {
             spaceBetween={40}
             slidesPerView='1'
             className={SwiperStyles}
-            autoplay={{
-              delay: 2500,
-              disableOnInteraction: true
-            }}
             loop
           >
             <SwiperSlide>

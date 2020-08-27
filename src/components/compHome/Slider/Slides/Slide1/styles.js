@@ -47,3 +47,24 @@ export const SubtitleBanner = styled('h4')({
     lineHeight: '24px'
   }
 })
+
+export const TextAnimation = styled('span')({
+  width: '100%',
+  position: 'relative',
+  display: 'block',
+  paddingBottom: '10px',
+  '&:hover:before': {
+    width: '100%'
+  },
+  '&:before': {
+    content: '\'\'',
+    width: '0',
+    position: 'absolute',
+    bottom: '0',
+    left: '0',
+    heigth: '',
+    height: '3px',
+    background: '#FF4A55',
+    transition: '.3s'
+  }
+})
