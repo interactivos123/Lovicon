@@ -16,7 +16,7 @@ export const Banner = () => {
           </Box>
           <Box mb={5} mx={{ xs: 2.5, sm: 0 }}>
             <Typography variant='subtitle1' color='initial'>
-              Construimos tu física<br />
+              Construimos tu<br />
               tienda física
             </Typography>
           </Box>
