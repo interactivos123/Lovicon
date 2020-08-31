@@ -1,7 +1,16 @@
-/**
- * Implement Gatsby's Node APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/node-apis/
- */
+const path = require('path')
+const listaBlogs = require('./src/blogs')
+const blogs = listaBlogs.listaBlogs()
 
-// You can delete this file if you're not using it
+exports.createPages = ({ actions }) => {
+  const { createPage } = actions
+  const singleBlog = path.resolve('src/templates/SingleBlog/index.js')
+
+  blogs.forEach(blog => {
+    createPage({
+      path: `${blog.url}`,
+      component: singleBlog,
+      context: blog
+    })
+  })
+}

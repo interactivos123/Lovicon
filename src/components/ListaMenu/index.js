@@ -94,6 +94,9 @@ const ListaMenu = (props) => {
 
       </PadreSubMenu>
       <MyButtonMenu onClick={() => props.handleOpen ? props.handleOpen() : null} footer={props.footer}>
+        <Link to='/blog' activeClassName='active'>Blog</Link>
+      </MyButtonMenu>
+      <MyButtonMenu onClick={() => props.handleOpen ? props.handleOpen() : null} footer={props.footer}>
         <Link to='/contactenos' activeClassName='active'>Contáctenos</Link>
       </MyButtonMenu>
     </>
