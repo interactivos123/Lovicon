@@ -1,30 +1,15 @@
 import { styled } from '@material-ui/styles'
-import { Box, Button } from '@material-ui/core'
+import { Box, Button, Typography } from '@material-ui/core'
 import { theme } from '../../theme'
 
 export const ArchiveContainer = styled(Box)({
   margin: '130px auto 0 auto',
-  maxWidth: '1280px',
+  maxWidth: '1140px',
   '& a': {
     textDecoration: 'none'
   },
   '& .gatsby-image-wrapper': {
-    height: '200px'
-  },
-  '& h2': {
-    margin: '0 15px',
-    display: 'inline-block',
-    position: 'relative',
-    fontSize: '18px',
-    fontWeight: '600',
-    paddingTop: '15px',
-    color: '#000'
-  },
-  '& p': {
-    fontSize: '14px',
-    fontWeight: '300',
-    margin: '10px 15px 0 15px',
-    color: '#000'
+    width: '100%'
   },
   [theme.breakpoints.down('sm')]: {
     margin: '130px auto 0 auto',
@@ -47,5 +32,35 @@ export const MyButton = styled(Button)({
   '&:hover': {
     background: '#ff4a55',
     color: '#fff'
+  }
+})
+export const StepNumber = styled('span')({
+  fontSize: '12px',
+  display: 'block',
+  color: '#000',
+  textDecoration: 'none'
+})
+
+export const StepTitle = styled('h3')({
+  fontSize: '18px',
+  fontWeight: '600',
+  marginTop: '0',
+  marginBottom: '20px',
+  color: '#000',
+  textDecoration: 'none'
+})
+
+export const StepContent = styled(Typography)({
+  fontSize: '14px',
+  color: '#000',
+  textDecoration: 'none'
+})
+export const ContainerCard = styled('div')({
+  width: 'auto',
+  border: '1px solid #000',
+  padding: '20px 25px 20px 25px',
+  height: '100%',
+  [theme.breakpoints.down('xs')]: {
+    width: '100%'
   }
 })

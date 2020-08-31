@@ -5,14 +5,12 @@ import { theme } from '../../theme'
 export const ContainerSingleBlog = styled(Box)({
   margin: '130px auto 0 auto',
   maxWidth: '800px',
-  '& article p br': {
-    marginBottom: '25px'
-  },
   '& article img': {
     width: '100%'
   },
   '& article p': {
-    fontSize: '16px'
+    fontSize: '16px',
+    fontWeight: 300
   },
   [theme.breakpoints.down('sm')]: {
     margin: '130px auto 0 auto',
@@ -50,5 +48,5 @@ export const Title = styled('h1')({
 export const Fecha = styled('p')({
   fontSize: '15px',
   color: '#000',
-  fontWeight: '500'
+  fontWeight: '300'
 })
