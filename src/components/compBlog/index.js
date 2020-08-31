@@ -29,9 +29,9 @@ export const CompBlog = () => {
                   <Image name={blog.img} />
                   <ListItem>
                     <StepNumber>{`0${id + 1}`}</StepNumber>
-                    <StepTitle>{blog.title}</StepTitle>
-                    <StepContent variant='p'>{blog.excerpt}</StepContent>
                   </ListItem>
+                  <StepTitle>{blog.title}</StepTitle>
+                  <StepContent variant='p'>{blog.excerpt}</StepContent>
                 </ContainerCard>
               </Link>
             </Grid>

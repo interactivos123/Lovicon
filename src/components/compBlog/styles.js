@@ -58,7 +58,7 @@ export const StepContent = styled(Typography)({
 export const ContainerCard = styled('div')({
   width: 'auto',
   border: '1px solid #000',
-  padding: '20px 25px 20px 25px',
+  padding: '30px 35px 30px 35px',
   height: '100%',
   [theme.breakpoints.down('xs')]: {
     width: '100%'
