@@ -45,7 +45,7 @@ export const ExpandeTuMarca = () => {
           LOVICON RETAIL es la compañía más completa de arquitectura comercial y comunicación para
           puntos de venta, tiene como misión ayudar a las marcas a expandirse mediante nuevos canales
           de venta físicos. Construimos Showrooms, almacenes, franquicias, Pop Up Stores y demás
-          formatos que facilitan la venta de productos y servicios en canales tradicionales.
+          formatos que facilitan la venta de productos y servicios en canales de venta minorista.
         </Text>
       </Grid>
     </Container>
