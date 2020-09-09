@@ -50,3 +50,38 @@ export const Fecha = styled('p')({
   color: '#000',
   fontWeight: '300'
 })
+
+export const ConrainerShare = styled('div')({
+  display: 'flex',
+  '&& button': {
+    marginRight: '20px'
+  },
+  '&& button:last-child': {
+    marginRight: '0px'
+  }
+})
+
+export const TitleShare = styled('h6')({
+  marginTop: '20px',
+  fontSize: '22px',
+  padding: '10px 0 20px',
+  fontWeight: 400,
+  position: 'relative',
+  display: 'inline-block',
+  margin: 0,
+  '&:before': {
+    content: '\'\'',
+    width: '80%',
+    height: '3px',
+    position: 'absolute',
+    backgroundColor: '#FF4A55',
+    top: 0,
+    left: 0
+  },
+  [theme.breakpoints.down('sm')]: {
+    fontSize: '18px',
+    '&:before': {
+      width: '80%'
+    }
+  }
+})

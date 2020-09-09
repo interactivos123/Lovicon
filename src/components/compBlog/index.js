@@ -24,7 +24,7 @@ export const CompBlog = () => {
               md={4}
               key={id}
             >
-              <Link to={`/${blog.url}`}>
+              <Link to={`/blog/${blog.url}`}>
                 <ContainerCard>
                   <Image name={blog.img} />
                   <ListItem>

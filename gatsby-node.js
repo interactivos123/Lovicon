@@ -8,7 +8,7 @@ exports.createPages = ({ actions }) => {
 
   blogs.forEach(blog => {
     createPage({
-      path: `${blog.url}`,
+      path: `blog/${blog.url}`,
       component: singleBlog,
       context: blog
     })
