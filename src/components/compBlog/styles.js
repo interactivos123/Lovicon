@@ -9,7 +9,8 @@ export const ArchiveContainer = styled(Box)({
     textDecoration: 'none'
   },
   '& .gatsby-image-wrapper': {
-    width: '100%'
+    width: '100%',
+    height: '231px'
   },
   [theme.breakpoints.down('sm')]: {
     margin: '130px auto 0 auto',
