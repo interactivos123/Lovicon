@@ -5,7 +5,10 @@ import SEO from '../components/seo'
 const Contactenos = () => {
   return (
     <>
-      <SEO title='Contactenos' />
+      <SEO
+        title='Contáctenos, siempre estamos disponibles para ti'
+        description='En Lovicon somos fans de las tiendas físicas, nos especializamos en la construcción de locales comerciales para todas las categorías'
+      />
       {/* <Cabecera title='Contactenos' /> */}
       <CompContacto />
     </>

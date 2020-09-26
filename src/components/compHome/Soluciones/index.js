@@ -28,7 +28,7 @@ export const Soluciones = () => {
             <SwiperSlide>
               <Slide
                 imagePath='ImgExpandingStore.png'
-                url='/soluciones/expanding-brand'
+                url='/soluciones/expanding-brand/'
                 text='Ideal para marcas en crecimeinto, con tiendas posicionadas en elmercado y que se
                       encuentran en expansión.'
               />
@@ -43,14 +43,14 @@ export const Soluciones = () => {
             <SwiperSlide>
               <Slide
                 imagePath='ImgStoreRestyling.png'
-                url='/soluciones/storerestayling'
+                url='/soluciones/storerestayling/'
                 text='Ideal para marcas que quieren remodelar sus tiendas.'
               />
             </SwiperSlide>
             <SwiperSlide>
               <Slide
                 imagePath='ImgOmnichannelStore.png'
-                url='/soluciones/omnichannel-store'
+                url='/soluciones/omnichannel-store/'
                 text='Ideal para marcas que reponden a nuevos comportamientos de compra.'
               />
             </SwiperSlide>

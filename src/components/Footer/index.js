@@ -14,7 +14,7 @@ const Footer = () => {
       <MyContainerFooter container direction='row'>
 
         <MyColumn1 item xs={12} sm={6} md={4}>
-          <Image name='LogoLovicon.png' />
+          <Image name='LogoLovicon.png' description='Logo Lovicon' />
           <Box>
             <RedesSociales />
           </Box>
@@ -39,16 +39,16 @@ const Footer = () => {
                 <Link to='/'>Inicio</Link>
               </MyLinkTerminos>
               <MyLinkTerminos>
-                <Link to='/servicios/arquitectura-y-construccion'>Servicios</Link>
+                <Link to='/servicios/arquitectura-y-construccion/'>Servicios</Link>
               </MyLinkTerminos>
               <MyLinkTerminos>
-                <Link to='/soluciones/expanding-brand'>Soluciones</Link>
+                <Link to='/soluciones/expanding-brand/'>Soluciones</Link>
               </MyLinkTerminos>
               <MyLinkTerminos>
-                <Link to='/contactenos'>Contáctenos</Link>
+                <Link to='/contactenos/'>Contáctenos</Link>
               </MyLinkTerminos>
               <MyLinkTerminos>
-                <Link to='/tratamiento-de-datos'>Términos y condiciones</Link>
+                <Link to='/tratamiento-de-datos/'>Términos y condiciones</Link>
               </MyLinkTerminos>
             </MyContainerMenu>
           </Grid>

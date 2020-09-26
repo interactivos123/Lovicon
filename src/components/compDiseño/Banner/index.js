@@ -30,7 +30,7 @@ export const Banner = () => {
         </Grid>
 
         <MyColumn item xs={12} sm={6}>
-          <Image name='banner-diseno.jpg' />
+          <Image name='banner-diseno.jpg' description='Diseñamos tu tienda y todos sus elementos' />
           <Hidden smUp>
             <Box my={4} mx={5}>
               <ListItem>Fachada</ListItem>

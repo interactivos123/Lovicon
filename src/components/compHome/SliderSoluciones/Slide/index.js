@@ -9,7 +9,7 @@ export const Slide = ({ imagePath = 'ImgExpandingStore.png', url = '/', text = '
     <Grid container>
       <GridImage item xs={12} sm={6} md={6} lg={6} xl={6}>
         <Link to={url}>
-          <Image name={imagePath} />
+          <Image name={imagePath} description={imagePath} />
         </Link>
       </GridImage>
       <Grid item xs={12} sm={6} md={6} lg={6} xl={4}>

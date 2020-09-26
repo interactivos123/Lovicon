@@ -18,7 +18,7 @@ export const ModalImagen = ({ name }) => {
   return (
     <ContainerImageModal>
       <button onClick={handleOpen}>
-        <Image name={name} />
+        <Image name={name} description={name} />
       </button>
       <MyModal
         open={open}
@@ -31,7 +31,7 @@ export const ModalImagen = ({ name }) => {
             <MyClose onClick={handleClose}>
               <CloseIcon />
             </MyClose>
-            <Image name={name} />
+            <Image name={name} description={name} />
           </ContainerModal>
         </Fade>
       </MyModal>

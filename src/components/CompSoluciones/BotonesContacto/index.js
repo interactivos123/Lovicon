@@ -22,7 +22,7 @@ export const BotonesContacto = () => {
         </Grid>
         <Grid item xs={12} sm={12} md={4} lg={4} xl={4}>
           <Box my={[1.25, 1.25, 0]} height='100%'>
-            <StyledLink to='/contactenos'>
+            <StyledLink to='/contactenos/'>
               <MyButton>Solicita una cotización</MyButton>
             </StyledLink>
           </Box>

@@ -53,27 +53,27 @@ export const ProductosYServicios = () => {
       </GridServiciosS1>
       <Hidden smUp>
         <ContainerImageMobil>
-          <Image name='ImageServicios.jpg' />
+          <Image name='ImageServicios.jpg' description='Servicios' />
         </ContainerImageMobil>
       </Hidden>
       <GridServiciosS2 container>
         <Grid item xs={12} sm={12} md={7} lg={8} xl={8}>
-          <Link to='/servicios/arquitectura-y-construccion'>
+          <Link to='/servicios/arquitectura-y-construccion/'>
             <ItemServicio id='arquitectura'>
               Arquitectura y construcción
             </ItemServicio>
           </Link>
-          <Link to='/servicios/diseno'>
+          <Link to='/servicios/diseno/'>
             <ItemServicio id='diseno'>
               Diseño
             </ItemServicio>
           </Link>
-          <Link to='/servicios/mobiliario'>
+          <Link to='/servicios/mobiliario/'>
             <ItemServicio id='mobiliario'>
               Mobiliario
             </ItemServicio>
           </Link>
-          <Link to='/servicios/visual-merchandising'>
+          <Link to='/servicios/visual-merchandising/'>
             <ItemServicio id='visual'>
               Visual Merchandising
             </ItemServicio>
@@ -81,7 +81,7 @@ export const ProductosYServicios = () => {
         </Grid>
         <Grid item xs={12} sm={12} md={5} lg={4} xl={4}>
           <Hidden smDown>
-            <Image name='ImageServicios.jpg' />
+            <Image name='ImageServicios.jpg' description='Servicios' />
           </Hidden>
           <Divisor />
           <Box minHeight='100px'>

@@ -3,7 +3,7 @@ import { GridData, Url, StyledListItem } from './styles'
 import { Box, Grid, Typography, ListItemIcon, ListItemText } from '@material-ui/core'
 import { Room, Phone, PhoneIphone, Email } from '@material-ui/icons'
 import { FormRegister } from './FormRegister'
-import { Title } from '../../theme'
+import { TitleSEO } from '../../theme'
 
 export const CompContacto = () => {
   return (
@@ -11,7 +11,7 @@ export const CompContacto = () => {
       <Grid container>
         <GridData item xl={6} lg={6} md={6} sm={12} xs={12}>
           <Box mr={5}>
-            <Title>Contacto</Title>
+            <TitleSEO>Contacto</TitleSEO>
             <Box pt={2.5}>
               <Typography>
                 En Lovicon somos fans de las tiendas físicas, nos especializamos en la

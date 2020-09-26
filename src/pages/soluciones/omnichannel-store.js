@@ -10,7 +10,10 @@ import SEO from '../../components/seo'
 const OmniChannelStore = () => {
   return (
     <>
-      <SEO title='Omnichannel Store' />
+      <SEO
+        title='Omnichannel Store - Acercamos tu marca a la omnicanalidad'
+        description='Si bien la Omnicanalidad está asociada generalmente a software y tecnología, la tienda física desempeña un papel fundamental'
+      />
       <Banner />
       <Como />
       <Ventajas />

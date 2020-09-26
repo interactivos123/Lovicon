@@ -14,17 +14,17 @@ export const Imagenes = ({ img1, img2, img3 }) => {
 
           <Grid item md={3}>
             <Box mr={2}>
-              <Image name={img1} />
+              <Image name={img1} description='img1' />
             </Box>
           </Grid>
           <Grid item md={4}>
             <Box mx={1}>
-              <Image name={img2} />
+              <Image name={img2} description='img2' />
             </Box>
           </Grid>
           <Grid item md={3}>
             <Box ml={2}>
-              <Image name={img3} />
+              <Image name={img3} description='img3' />
             </Box>
           </Grid>
 
@@ -36,7 +36,7 @@ export const Imagenes = ({ img1, img2, img3 }) => {
             endIcon={<NavigateNext />}
             variant='outlined'
             color='primary'
-            to='/contactenos'
+            to='/contactenos/'
           >
         Construir ahora
           </LinkButton>

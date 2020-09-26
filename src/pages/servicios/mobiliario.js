@@ -7,7 +7,10 @@ import SEO from '../../components/seo'
 const Mobiliario = () => {
   return (
     <>
-      <SEO title='Mobiliario' />
+      <SEO
+        title='Mobiliario - Fabricamos el mobiliario de tu tienda'
+        description='Fabricamos mostradores, estanterias, exhibidores, mesas, paneles.'
+      />
       <Banner />
       <TiendasGaleria
         title='Nuestros mobiliario'

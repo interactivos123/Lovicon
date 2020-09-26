@@ -67,7 +67,7 @@ export const FormRegister = () => {
               <Checkbox color='primary' required value={terms.value} onChange={terms.onChange} />
             }
             margin='normal'
-            label={<Typography color='primary'>Estoy deacuerdo con los <Link to='/tratamiento-de-datos'>Términos y Condiciones</Link></Typography>}
+            label={<Typography color='primary'>Estoy deacuerdo con los <Link to='/tratamiento-de-datos/'>Términos y Condiciones</Link></Typography>}
           />
           <ButtonForm>Enviar Mensaje</ButtonForm>
         </Form>

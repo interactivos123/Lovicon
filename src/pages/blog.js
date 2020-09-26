@@ -5,7 +5,9 @@ import { CompBlog } from '../components/compBlog'
 const Blog = () => {
   return (
     <>
-      <SEO title='Blog' />
+      <SEO
+        title='Blog'
+      />
       <CompBlog />
     </>
   )

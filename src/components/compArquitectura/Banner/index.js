@@ -34,7 +34,7 @@ export const Banner = () => {
         </Grid>
 
         <MyColumn item xs={12} sm={6}>
-          <Image name='ArquitecturaConstruccion.png' />
+          <Image name='ArquitecturaConstruccion.png' description='Arquitectura y construcción' />
           <Hidden smUp>
             <Box my={4} mx={5}>
               <ListItem>Showrooms</ListItem>

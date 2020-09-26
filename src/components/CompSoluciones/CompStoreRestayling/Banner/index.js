@@ -31,7 +31,7 @@ export const Banner = () => {
             </Box>
             <Box mt={2.5} mr={10}>
               <Typography>
-                <Link to='/soluciones/new-store'>
+                <Link to='/soluciones/new-store/'>
                   Si tu tienda necesita un diseño completamente nuevo visita la solución “New Store Now”
                 </Link>
               </Typography>
@@ -40,7 +40,7 @@ export const Banner = () => {
         </Grid>
 
         <MyColumn item xs={12} sm={5}>
-          <Image name='Img-StoreRestyling.jpg' />
+          <Image name='Img-StoreRestyling.jpg' description='StoreRestyling' />
           <Hidden smUp>
             <Box my={4} mx={2.5}>
               <Box mt={10}>
@@ -53,7 +53,7 @@ export const Banner = () => {
               </Box>
               <Box mt={2.5}>
                 <Typography>
-                  <Link to='/soluciones/new-store'>
+                  <Link to='/soluciones/new-store/'>
                     Si tu tienda necesita un diseño completamente nuevo visita la solución “New Store Now”
                   </Link>
                 </Typography>

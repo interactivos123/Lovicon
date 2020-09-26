@@ -17,6 +17,21 @@ export const Container = styled(Grid)({
   }
 })
 
+export const TitlePage = styled('h1')({
+  fontSize: '30px',
+  fontFamily: ['Nunito Sans', '-apple-system'].join(','),
+  fontWeight: '300',
+  lineHeight: '1',
+  [theme.breakpoints.down('sm')]: {
+    fontSize: 24,
+    lineHeight: '32px'
+  },
+  [theme.breakpoints.down('xs')]: {
+    fontSize: 18,
+    lineHeight: '24px'
+  }
+})
+
 export const TitleBanner = styled('h3')({
   fontSize: '48px',
   lineHeight: '60px',

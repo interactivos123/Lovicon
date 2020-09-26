@@ -112,6 +112,13 @@ export const theme = createMuiTheme({
         color: '#000'
       }
     }
+  },
+  props: {
+    MuiTypography: {
+      variantMapping: {
+        subtitle1: 'h1'
+      }
+    }
   }
 })
 
@@ -209,6 +216,30 @@ export const ContenedorPadre = styled(Box)({
 })
 
 export const Title = styled('h3')({
+  fontSize: '40px',
+  paddingTop: '20px',
+  fontWeight: 400,
+  position: 'relative',
+  display: 'inline-block',
+  margin: 0,
+  '&:before': {
+    content: '\'\'',
+    width: '120%',
+    height: '3px',
+    position: 'absolute',
+    backgroundColor: '#FF4A55',
+    top: 0,
+    left: 0
+  },
+  [theme.breakpoints.down('sm')]: {
+    fontSize: '30px',
+    '&:before': {
+      width: '80%'
+    }
+  }
+})
+
+export const TitleSEO = styled('h1')({
   fontSize: '40px',
   paddingTop: '20px',
   fontWeight: 400,

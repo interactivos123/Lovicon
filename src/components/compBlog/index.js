@@ -1,5 +1,5 @@
 import React from 'react'
-import { Title } from '../../theme'
+import { TitleSEO } from '../../theme'
 import { Box, Grid } from '@material-ui/core'
 import Image from '../image'
 import { ArchiveContainer, StepNumber, StepTitle, StepContent, ContainerCard } from './styles'
@@ -13,7 +13,7 @@ export const CompBlog = () => {
 
   return (
     <ArchiveContainer>
-      <Title>Blog</Title>
+      <TitleSEO>Blog</TitleSEO>
       <Box mt={6}>
         <Grid container spacing={0}>
           {listaBlogs.map((blog, id) =>
@@ -26,7 +26,7 @@ export const CompBlog = () => {
             >
               <Link to={`/blog/${blog.url}`}>
                 <ContainerCard>
-                  <Image name={blog.img} />
+                  <Image name={blog.img} description={blog.title} />
                   <ListItem>
                     <StepNumber>{`0${id + 1}`}</StepNumber>
                   </ListItem>

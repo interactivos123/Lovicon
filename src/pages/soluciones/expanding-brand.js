@@ -10,7 +10,10 @@ import SEO from '../../components/seo'
 const ExpandingBrand = () => {
   return (
     <>
-      <SEO title='Expanding Brand' />
+      <SEO
+        title='Expanding Brand - Construimos tu tienda física'
+        description='Construye tu tienda para aumentar tus canales de venta físicos ubicando tu tienda de forma estratégica y cercana a tu segmento de mercado'
+      />
       <Banner />
       <Como />
       <Pasos />

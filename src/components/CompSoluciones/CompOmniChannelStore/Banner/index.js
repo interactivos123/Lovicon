@@ -33,7 +33,7 @@ export const Banner = () => {
         </Grid>
 
         <MyColumn item xs={12} sm={5}>
-          <Image name='Img-OmniChannelStore.jpg' />
+          <Image name='Img-OmniChannelStore.jpg' description='OmniChannelStore' />
           <Hidden smUp>
             <Box my={4} mx={2.5}>
               <Box mt={10}>

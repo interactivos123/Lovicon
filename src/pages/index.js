@@ -11,7 +11,10 @@ import { Clientes } from '../components/compHome/Clientes'
 const Inicio = () => {
   return (
     <>
-      <SEO title='Inicio' />
+      <SEO
+        title='Arquitectura, diseño y gestión de tiendas físicas'
+        description='Somos la compañía más completa de arquitectura comercial y comunicación para puntos de venta, tiene como misión ayudar a las marcas a expandirse'
+      />
       <Slide1 />
       <SwipeDown />
       <ExpandeTuMarca />

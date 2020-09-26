@@ -23,15 +23,15 @@ export const Clientes = () => {
           }}
           loop
         >
-          <SwiperSlide><Image name='KIA.png' /></SwiperSlide>
-          <SwiperSlide><Image name='MAC.png' /></SwiperSlide>
-          <SwiperSlide><Image name='BBC.jpg' /></SwiperSlide>
-          <SwiperSlide><Image name='JAC.png' /></SwiperSlide>
-          <SwiperSlide><Image name='CHUCKE.png' /></SwiperSlide>
-          <SwiperSlide><Image name='CAPONES.png' /></SwiperSlide>
-          <SwiperSlide><Image name='PROARCA.png' /></SwiperSlide>
-          <SwiperSlide><Image name='SHETLAN.png' /></SwiperSlide>
-          <SwiperSlide><Image name='ZANNA.png' /></SwiperSlide>
+          <SwiperSlide><Image name='KIA.png' description='KIA' /></SwiperSlide>
+          <SwiperSlide><Image name='MAC.png' description='MAC' /></SwiperSlide>
+          <SwiperSlide><Image name='BBC.jpg' description='BBC' /></SwiperSlide>
+          <SwiperSlide><Image name='JAC.png' description='JAC' /></SwiperSlide>
+          <SwiperSlide><Image name='CHUCKE.png' description='CHUCKE' /></SwiperSlide>
+          <SwiperSlide><Image name='CAPONES.png' description='CAPONES' /></SwiperSlide>
+          <SwiperSlide><Image name='PROARCA.png' description='PROARCA' /></SwiperSlide>
+          <SwiperSlide><Image name='SHETLAN.png' description='SHETLAN' /></SwiperSlide>
+          <SwiperSlide><Image name='ZANNA.png' description='ZANNA' /></SwiperSlide>
         </SwiperContainer>
       </Box>
     </ContenedorPadre>

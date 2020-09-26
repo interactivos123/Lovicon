@@ -7,7 +7,10 @@ import SEO from '../../components/seo'
 const Diseno = () => {
   return (
     <>
-      <SEO title='Diseño' />
+      <SEO
+        title='Diseño - Diseñamos tu tienda y todos sus elementos'
+        description='Diseñamos tu fachada, avisos, mobiliario, señalética, exhibidores.'
+      />
       <Banner />
       <TiendasGaleria
         title='Nuestros diseños'

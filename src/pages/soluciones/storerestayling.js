@@ -10,7 +10,10 @@ import SEO from '../../components/seo'
 const StoreRestayling = () => {
   return (
     <>
-      <SEO title='Store-Restyling' />
+      <SEO
+        title='Store Restyling - Remodelamos tu tienda física'
+        description='Este paquete de soluciones es ideal para marcas que buscan transformarse. Marcas que actualmente tienen un formato de tienda desactualizado y quieren mejorar'
+      />
       <Banner />
       <Como />
       <Pasos />

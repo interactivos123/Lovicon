@@ -7,7 +7,10 @@ import SEO from '../../components/seo'
 const VisualMerchandising = () => {
   return (
     <>
-      <SEO title='Visual Merchandising' />
+      <SEO
+        title='Visual Merchandising'
+        description='Diseñamos el plan de merchandising de tu tienda haciendo la gestión del surtido, localización del producto, presentación del producto, comunicación'
+      />
       <Banner />
       <TiendasGaleria
         title='Nuestro Visual Merchandising '

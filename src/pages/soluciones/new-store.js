@@ -10,7 +10,10 @@ import SEO from '../../components/seo'
 const NewStore = () => {
   return (
     <>
-      <SEO title='New Store' />
+      <SEO
+        title='New Store - Diseñamos el espacio ideal | Lovicon'
+        description='Diseñamos el espacio ideal para que tus clientes se vinculen con tu marca'
+      />
       <Banner />
       <Como />
       <Pasos />

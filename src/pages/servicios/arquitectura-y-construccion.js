@@ -7,7 +7,10 @@ import SEO from '../../components/seo'
 const ArquitecturaYConstruccion = () => {
   return (
     <>
-      <SEO title='Arquitectura y Construcción' />
+      <SEO
+        title='Arquitectura y Construcción'
+        description='Construimos showrooms, almacenes, shop in Shops, Franquicias, Outlets, Pop Up Stores, Flag Ship Stores,Concept Stores.'
+      />
       <Banner />
       <TiendasGaleria
         title='Nuestras tiendas'

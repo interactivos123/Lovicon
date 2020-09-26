@@ -34,7 +34,7 @@ export const MenuPC = (props) => {
 
           <Grid item xs={4}>
             <Link to='/'>
-              <Image name='LogoLovicon.png' />
+              <Image name='LogoLovicon.png' description='Logo Lovicon' />
             </Link>
           </Grid>
 

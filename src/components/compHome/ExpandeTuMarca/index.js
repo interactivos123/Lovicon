@@ -12,22 +12,22 @@ export const ExpandeTuMarca = () => {
             <SubtitleBanner>¿Qué necesita tu marca para crecer?</SubtitleBanner>
             <Grid container spacing={2}>
               <Grid item xs={6} sm={6} md={6} lg={6} xl={6}>
-                <StyledLink to='/soluciones/new-store'>
+                <StyledLink to='/soluciones/new-store/'>
                   <ListItem><TextAnimation>Diseñar una nueva tienda</TextAnimation></ListItem>
                 </StyledLink>
               </Grid>
               <Grid item xs={6} sm={6} md={6} lg={6} xl={6}>
-                <StyledLink to='/soluciones/expanding-brand'>
+                <StyledLink to='/soluciones/expanding-brand/'>
                   <ListItem><TextAnimation>Construir una nueva tienda</TextAnimation></ListItem>
                 </StyledLink>
               </Grid>
               <Grid item xs={6} sm={6} md={6} lg={6} xl={6}>
-                <StyledLink to='/soluciones/storerestayling'>
+                <StyledLink to='/soluciones/storerestayling/'>
                   <ListItem><TextAnimation>Renovar mi tienda</TextAnimation></ListItem>
                 </StyledLink>
               </Grid>
               <Grid item xs={6} sm={6} md={6} lg={6} xl={6}>
-                <StyledLink to='/soluciones/omnichannel-store'>
+                <StyledLink to='/soluciones/omnichannel-store/'>
                   <ListItem><TextAnimation>Tienda Omnicanal</TextAnimation></ListItem>
                 </StyledLink>
               </Grid>

@@ -37,22 +37,22 @@ const ListaMenu = (props) => {
           <SubmenuContainer className='submenu'>
             <Grid container>
               <Grid item md={3}>
-                <Link to='/servicios/arquitectura-y-construccion'>
+                <Link to='/servicios/arquitectura-y-construccion/'>
                   <Button onClick={() => props.handleOpen ? props.handleOpen() : null}>Arquitectura y construcción</Button>
                 </Link>
               </Grid>
               <Grid item md={3}>
-                <Link to='/servicios/diseno'>
+                <Link to='/servicios/diseno/'>
                   <Button onClick={() => props.handleOpen ? props.handleOpen() : null}>Diseño</Button>
                 </Link>
               </Grid>
               <Grid item md={3}>
-                <Link to='/servicios/mobiliario'>
+                <Link to='/servicios/mobiliario/'>
                   <Button onClick={() => props.handleOpen ? props.handleOpen() : null}>Mobiliario</Button>
                 </Link>
               </Grid>
               <Grid item md={3}>
-                <Link to='/servicios/visual-merchandising'>
+                <Link to='/servicios/visual-merchandising/'>
                   <Button onClick={() => props.handleOpen ? props.handleOpen() : null}>Visual Merchandising</Button>
                 </Link>
               </Grid>
@@ -69,22 +69,22 @@ const ListaMenu = (props) => {
           <SubmenuContainer className='submenu'>
             <Grid container>
               <Grid item md={3}>
-                <Link to='/soluciones/expanding-brand'>
+                <Link to='/soluciones/expanding-brand/'>
                   <Button onClick={() => props.handleOpen ? props.handleOpen() : null}>Expanding Brand</Button>
                 </Link>
               </Grid>
               <Grid item md={3}>
-                <Link to='/soluciones/new-store'>
+                <Link to='/soluciones/new-store/'>
                   <Button onClick={() => props.handleOpen ? props.handleOpen() : null}> New store</Button>
                 </Link>
               </Grid>
               <Grid item md={3}>
-                <Link to='/soluciones/omnichannel-store'>
+                <Link to='/soluciones/omnichannel-store/'>
                   <Button onClick={() => props.handleOpen ? props.handleOpen() : null}>Omnichannel Store</Button>
                 </Link>
               </Grid>
               <Grid item md={3}>
-                <Link to='/soluciones/storerestayling'>
+                <Link to='/soluciones/storerestayling/'>
                   <Button onClick={() => props.handleOpen ? props.handleOpen() : null}>Store-Restyling</Button>
                 </Link>
               </Grid>
@@ -97,7 +97,7 @@ const ListaMenu = (props) => {
         <Link to='/blog' activeClassName='active'>Blog</Link>
       </MyButtonMenu>
       <MyButtonMenu onClick={() => props.handleOpen ? props.handleOpen() : null} footer={props.footer}>
-        <Link to='/contactenos' activeClassName='active'>Contáctenos</Link>
+        <Link to='/contactenos/' activeClassName='active'>Contáctenos</Link>
       </MyButtonMenu>
     </>
   )

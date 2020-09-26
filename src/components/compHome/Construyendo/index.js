@@ -13,7 +13,7 @@ export const Construyendo = () => {
         <Grid container>
 
           <Grid item xs={10} sm={8} md={5}>
-            <Image name='construyendoTiendas.png' />
+            <Image name='construyendoTiendas.png' description='Construyendo tiendas' />
           </Grid>
 
           <Grid item xs={12} md={7}>
