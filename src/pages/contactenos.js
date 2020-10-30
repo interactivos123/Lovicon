@@ -1,6 +1,8 @@
 import React from 'react'
 import { CompContacto } from '../components/CompContacto'
 import SEO from '../components/seo'
+import Header from '../components/Header'
+import Footer from '../components/Footer'
 
 const Contactenos = () => {
   return (
@@ -10,7 +12,9 @@ const Contactenos = () => {
         description='En Lovicon somos fans de las tiendas físicas, nos especializamos en la construcción de locales comerciales para todas las categorías'
       />
       {/* <Cabecera title='Contactenos' /> */}
+      <Header />
       <CompContacto />
+      <Footer />
     </>
   )
 }

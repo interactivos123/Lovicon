@@ -16,9 +16,9 @@ export default function TopLayout ({ children }) {
       </Helmet>
       <ThemeProvider theme={theme}>
         <CssBaseline />
-        <Header />
+        {/* <Header /> */}
         {children}
-        <Footer />
+        {/* <Footer /> */}
       </ThemeProvider>
     </>
   )

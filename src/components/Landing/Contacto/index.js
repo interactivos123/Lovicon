@@ -6,7 +6,7 @@ import { MyTitle, ContainerContact, MyButton, GridProject } from './styles'
 
 export const Contacto = () => {
   return (
-    <ContenedorPadre mt={{ xs: 10, md: 16, lg: 20 }}>
+    <ContenedorPadre my={{ xs: 10, md: 16, lg: 20 }}>
       <Grid container alignItems='flex-end'>
         <Grid item xs={12} sm={7}>
           <ContainerContact>

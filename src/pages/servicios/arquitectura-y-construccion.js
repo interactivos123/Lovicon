@@ -3,6 +3,8 @@ import { Banner } from '../../components/compArquitectura/Banner'
 import { TiendasGaleria } from '../../components/generals/TiendasGallery'
 import { ConstruirTuTienda } from '../../components/generals/ConstruirTienda'
 import SEO from '../../components/seo'
+import Header from '../../components/Header'
+import Footer from '../../components/Footer'
 
 const ArquitecturaYConstruccion = () => {
   return (
@@ -11,6 +13,7 @@ const ArquitecturaYConstruccion = () => {
         title='Arquitectura y Construcción'
         description='Construimos showrooms, almacenes, shop in Shops, Franquicias, Outlets, Pop Up Stores, Flag Ship Stores,Concept Stores.'
       />
+      <Header />
       <Banner />
       <TiendasGaleria
         title='Nuestras tiendas'
@@ -20,6 +23,7 @@ const ArquitecturaYConstruccion = () => {
         img3='arquitectura3.jpg'
       />
       <ConstruirTuTienda title='¿Quieres construir tu tienda?' />
+      <Footer />
     </>
   )
 }

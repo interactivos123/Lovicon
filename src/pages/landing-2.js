@@ -1,18 +1,16 @@
 import React from 'react'
-import { Titulo } from '../components/Landing/Titulo'
-import { Logos } from '../components/Landing/Logos'
-import { Contenido } from '../components/Landing/Contenido'
-import { Contacto } from '../components/Landing/Contacto'
+import { TituloLogos } from '../components/Landing-2/TituloLogos'
+import { Contacto } from '../components/Landing-2/Contacto'
+import { Contenido } from '../components/Landing-2/Contenido'
 
-const Landing = () => {
+const Landing2 = () => {
   return (
     <>
-      <Titulo />
-      <Logos />
-      <Contenido />
+      <TituloLogos />
       <Contacto />
+      <Contenido />
     </>
   )
 }
 
-export default Landing
+export default Landing2

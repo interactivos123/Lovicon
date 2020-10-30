@@ -6,6 +6,8 @@ import { BotonesContacto } from '../../components/CompSoluciones/BotonesContacto
 import { SiguientePaso } from '../../components/CompSoluciones/CompNewStore/SiguientePaso'
 import { LinksSoluciones } from '../../components/CompSoluciones/LinksSoluciones'
 import SEO from '../../components/seo'
+import Header from '../../components/Header'
+import Footer from '../../components/Footer'
 
 const NewStore = () => {
   return (
@@ -14,12 +16,14 @@ const NewStore = () => {
         title='New Store - Diseñamos el espacio ideal | Lovicon'
         description='Diseñamos el espacio ideal para que tus clientes se vinculen con tu marca'
       />
+      <Header />
       <Banner />
       <Como />
       <Pasos />
       <BotonesContacto />
       <SiguientePaso />
       <LinksSoluciones />
+      <Footer />
     </>
   )
 }

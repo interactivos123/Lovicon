@@ -2,6 +2,8 @@ import React from 'react'
 import { ContainerSingleBlog, Title, Fecha, ConrainerShare, TitleShare } from './styles'
 import ReactMarkdown from 'react-markdown'
 import SEO from '../../components/seo'
+import Header from '../../components/Header'
+import Footer from '../../components/Footer'
 import {
   FacebookShareButton,
   FacebookIcon,
@@ -47,6 +49,7 @@ const SingleBlog = ({ pageContext }) => {
         description={pageContext.excerpt}
         shemaMarkup={shema}
       />
+      <Header />
       <ContainerSingleBlog>
         <Title>{pageContext.title}</Title>
         <Fecha>{pageContext.fecha}</Fecha>
@@ -72,6 +75,7 @@ const SingleBlog = ({ pageContext }) => {
           </WhatsappShareButton>
         </ConrainerShare>
       </ContainerSingleBlog>
+      <Footer />
     </>
   )
 }

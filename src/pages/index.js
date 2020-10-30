@@ -7,6 +7,8 @@ import { SwipeDown } from '../components/compHome/SwipeDown.js'
 import { ExpandeTuMarca } from '../components/compHome/ExpandeTuMarca'
 import { Soluciones } from '../components/compHome/Soluciones'
 import { Clientes } from '../components/compHome/Clientes'
+import Header from '../components/Header'
+import Footer from '../components/Footer'
 
 const Inicio = () => {
   return (
@@ -15,6 +17,7 @@ const Inicio = () => {
         title='Arquitectura, diseño y gestión de tiendas físicas'
         description='Somos la compañía más completa de arquitectura comercial y comunicación para puntos de venta, tiene como misión ayudar a las marcas a expandirse'
       />
+      <Header />
       <Slide1 />
       <SwipeDown />
       <ExpandeTuMarca />
@@ -27,6 +30,7 @@ const Inicio = () => {
       {/* <RetailRenovacion /> */}
       {/* <PaquetesComp /> */}
       <Soluciones />
+      <Footer />
     </>
   )
 }
