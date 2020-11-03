@@ -4,8 +4,8 @@ import { Helmet } from 'react-helmet'
 import CssBaseline from '@material-ui/core/CssBaseline'
 import { ThemeProvider } from '@material-ui/core/styles'
 import { theme } from '../../src/theme'
-import Header from '../../src/components/Header'
-import Footer from '../../src/components/Footer'
+// import Header from '../../src/components/Header'
+// import Footer from '../../src/components/Footer'
 
 export default function TopLayout ({ children }) {
   return (
