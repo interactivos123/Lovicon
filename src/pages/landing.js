@@ -1,8 +1,9 @@
 import React from 'react'
+import { SectionOne } from '../components/compLanding'
 
 const Landing = () => {
   return (
-    <h1>Landing</h1>
+    <SectionOne />
   )
 }
 
