@@ -1,8 +1,13 @@
 import React from 'react'
+import { SectionTwo, SectionFour, SectionFive } from '../components/compLanding'
 
 const Landing = () => {
   return (
-    <h1>Landing</h1>
+    <>
+      <SectionTwo />
+      <SectionFour />
+      <SectionFive />
+    </>
   )
 }
 
