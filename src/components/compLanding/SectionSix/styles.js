@@ -166,7 +166,12 @@ export const Descripcion = styled('p')({
   fontWeight: '500',
   color: '#FFFFFF',
   textAlign: 'center',
-  width: '100%'
+  width: '100%',
+
+  [theme.breakpoints.down('sm')]: {
+    width: 'calc(100% - 20px)',
+    marginLeft: '20px'
+  }
 })
 
 export const Button = styled('button')({
@@ -185,6 +190,11 @@ export const Button = styled('button')({
 
   '&:active': {
     transform: 'scale(0.9)'
+  },
+
+  [theme.breakpoints.down('sm')]: {
+    width: 'calc(100% - 20px)',
+    marginLeft: '20px'
   }
 })
 

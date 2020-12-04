@@ -12,20 +12,13 @@ export const Title = styled('h3')({
   fontWeight: '500',
   fontSize: '32px',
   marginBottom: '60px',
+  maxWidth: '970px',
   '& b': {
     color: '#fff',
     fontWeight: '500'
   },
-  '& span': {
-    display: 'block'
-  },
-  [theme.breakpoints.down('md')]: {
-    '& span': {
-      display: 'inline-block'
-    }
-  },
   [theme.breakpoints.down('xs')]: {
-    fontSize: '24px'
+    fontSize: '28px'
   }
 })
 
