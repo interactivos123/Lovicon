@@ -2,6 +2,7 @@ import React from 'react'
 import { SwiperSlide } from 'swiper/react'
 import SwiperCore, { Navigation } from 'swiper'
 import Image from '../../image'
+import SwiperStyles from 'swiper/swiper-bundle.min.css'
 // import { StepOne, StepTwo, StepThree } from '../../../illustrations'
 import StepOne from '../../../images/StepOne.svg'
 import StepTwo from '../../../images/StepTwo.png'
@@ -39,6 +40,7 @@ const SectionThree = () => {
           spaceBetween={0}
           slidesPerView='auto'
           navigation
+          className={SwiperStyles}
         >
           <SwiperSlide>
             <CardStep
