@@ -1,13 +1,13 @@
 import React from 'react'
 import { SwiperSlide } from 'swiper/react'
 import SwiperCore, { Navigation } from 'swiper'
-import Image from '../../image'
 import SwiperStyles from 'swiper/swiper-bundle.min.css'
 // import { StepOne, StepTwo, StepThree } from '../../../illustrations'
 import StepOne from '../../../images/StepOne.svg'
 import StepTwo from '../../../images/StepTwo.png'
 import StepThree from '../../../images/StepThree.svg'
 import { ContenedorPadre } from '../../../theme'
+import { AnchorLink } from 'gatsby-plugin-anchor-links'
 
 import { ContainerSectionThree, Title, Button, ContainerBorderStep, ContainerStep, TitleStep, TextStep, SwiperContainer } from './styles'
 
@@ -17,7 +17,7 @@ const CardStep = ({ Illustration, Title, Text }) => {
   return (
     <ContainerBorderStep>
       <ContainerStep>
-        <img src={Illustration} />
+        <img src={Illustration} alt='ilustración' />
         <TitleStep>
           {Title}
         </TitleStep>
@@ -32,7 +32,7 @@ const CardStep = ({ Illustration, Title, Text }) => {
 const SectionThree = () => {
   return (
     <ContenedorPadre>
-      <ContainerSectionThree>
+      <ContainerSectionThree id='construir-tienda'>
         <Title>
           Cotice ahora mismo <b>en 3 pasos</b>
         </Title>
@@ -64,9 +64,11 @@ const SectionThree = () => {
             />
           </SwiperSlide>
         </SwiperContainer>
-        <Button>
-          QUIERO COTIZAR
-        </Button>
+        <AnchorLink to='/landing/#quiero-cotizar'>
+          <Button>
+            QUIERO COTIZAR
+          </Button>
+        </AnchorLink>
       </ContainerSectionThree>
     </ContenedorPadre>
   )

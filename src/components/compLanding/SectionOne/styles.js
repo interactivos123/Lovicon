@@ -97,8 +97,12 @@ export const CallToAction = styled('div')({
   flexDirection: 'column',
   alignItems: 'center',
   fontSize: '22px',
-  color: '#224FB4',
   textAlign: 'center',
+
+  '& a': {
+    color: '#224FB4',
+    textDecoration: 'none'
+  },
 
   '& svg': {
     margin: '20px 0 0 0'

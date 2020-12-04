@@ -1,11 +1,11 @@
 import React from 'react'
-import { ContenedorPadre } from '../../../theme'
-import { Container, Col1, Col2, Title, Subtitle, Text } from './styles'
+// import { ContenedorPadre } from '../../../theme'
+import { ContenedorPadreEspecial, Container, Col1, Col2, Title, Subtitle, Text } from './styles'
 import { Showrooms, Almacenes, ShopInShops, Outlets, PopUpStores, Franquicias, FlagShipStores, Bares, Restaurantes, Cafes } from '../../../icons'
 
 const SectionFive = () => {
   return (
-    <ContenedorPadre>
+    <ContenedorPadreEspecial>
       <Container>
         <Col1>
           <Title>¿Qué puede construir con Lovicon?</Title>
@@ -14,12 +14,18 @@ const SectionFive = () => {
             Las tiendas físicas dan a los clientes un lugar para meterse dentro de la marca,
             olerla y tocarla. Es en la tienda donde se construye el valor de marca.
             <br /><br />
-            Explore múltiples formatos de tiendas, nosotros le ayudamos
-            a diseñar y construir la más adecuada para su marca.
+            <span>
+              Explore múltiples formatos de tiendas, nosotros le ayudamos
+              a diseñar y construir la más adecuada para su marca.
+            </span>
           </Text>
         </Col1>
         <Col2>
           <section>
+            <p>
+              Explore múltiples formatos de tiendas, nosotros le ayudamos
+              a diseñar y construir la más adecuada para su marca.
+            </p>
             <div>
               <Showrooms />
               <h4>Showrooms</h4>
@@ -63,7 +69,7 @@ const SectionFive = () => {
           </section>
         </Col2>
       </Container>
-    </ContenedorPadre>
+    </ContenedorPadreEspecial>
   )
 }
 

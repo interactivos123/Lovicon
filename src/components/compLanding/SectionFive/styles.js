@@ -1,18 +1,37 @@
 import { styled } from '@material-ui/styles'
+import { theme, ContenedorPadre } from '../../../theme'
+
+export const ContenedorPadreEspecial = styled(ContenedorPadre)({
+  [theme.breakpoints.down('sm')]: {
+    paddingRight: '0',
+    paddingLeft: '0'
+  }
+})
 
 export const Container = styled('div')({
   padding: '80px 0',
-  display: 'flex'
+  display: 'flex',
+  flexWrap: 'wrap'
 })
 
 export const Col1 = styled('div')({
-  width: '50%'
+  width: '50%',
+  [theme.breakpoints.down('md')]: {
+    paddingRight: '30px'
+  },
+  [theme.breakpoints.down('sm')]: {
+    width: '100%',
+    padding: '0 30px'
+  }
 })
 
 export const Col2 = styled('div')({
   width: '50%',
   display: 'flex',
   justifyContent: 'flex-end',
+  '& p': {
+    display: 'none'
+  },
   '& section': {
     background: '#252727',
     width: '100%',
@@ -21,7 +40,7 @@ export const Col2 = styled('div')({
     display: 'flex',
     flexWrap: 'wrap',
     alignItems: 'center',
-    borderRadius: '40px'
+    borderRadius: '60px'
   },
   '& section div': {
     width: '33%',
@@ -38,25 +57,63 @@ export const Col2 = styled('div')({
   '& section svg': {
     width: '70px',
     height: '70px'
+  },
+  [theme.breakpoints.down('sm')]: {
+    width: '100%',
+    '& section': {
+      maxWidth: 'none'
+    },
+    '& p': {
+      display: 'block',
+      color: '#fff',
+      fontSize: '18px',
+      fontWeight: '600'
+    },
+    '& section div': {
+      width: '25%'
+    }
+  },
+  [theme.breakpoints.down('xs')]: {
+    '& section div h4': {
+      fontSize: '14px'
+    },
+    '& section svg': {
+      width: '60px',
+      height: '60px'
+    }
   }
 })
 
 export const Title = styled('h3')({
-  fontSize: '32px',
+  fontSize: '40px',
   color: '#ED144E',
   fontWeight: '500',
-  margin: '0'
+  margin: '0',
+  [theme.breakpoints.down('sm')]: {
+    fontSize: '28px'
+  }
 })
 
 export const Subtitle = styled('h5')({
   color: '#2DE4E8',
-  fontSize: '28px',
+  fontSize: '32px',
   fontWeight: '500',
-  margin: '15px 0'
+  margin: '15px 0',
+  [theme.breakpoints.down('sm')]: {
+    fontSize: '24px',
+    fontWeight: '600'
+  }
 })
 
 export const Text = styled('p')({
   fontSize: '22px',
   color: '#252727',
-  marginTop: '30px'
+  marginTop: '30px',
+  [theme.breakpoints.down('sm')]: {
+    fontSize: '18px',
+    fontWeight: '600',
+    '& span': {
+      display: 'none'
+    }
+  }
 })

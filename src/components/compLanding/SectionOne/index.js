@@ -4,6 +4,7 @@ import Image from '../../image'
 import { ContenedorPadre } from '../../../theme'
 import { SwipeDown } from '../../icons'
 import { StyledSectionOne, ContainerBackgroundImage, Container, ColumnLeft, ContainerLogo, Title, CallToAction, ColumnRight } from './styles'
+import { AnchorLink } from 'gatsby-plugin-anchor-links'
 
 const SectionOne = () => {
   return (
@@ -20,8 +21,12 @@ const SectionOne = () => {
               EL <b>86%</b> DE LAS <b>VENTAS</b> DE LOS COMERCIOS SIGUEN REALIZANDOSE EN LA <b>TIENDA FÍSICA</b>
             </Title>
             <CallToAction>
-              Construya <br /> su tienda ahora
-              <SwipeDown />
+              <AnchorLink to='/landing/#construir-tienda'>
+                Construya <br /> su tienda ahora
+              </AnchorLink>
+              <AnchorLink to='/landing/#construir-tienda'>
+                <SwipeDown />
+              </AnchorLink>
             </CallToAction>
           </ColumnLeft>
           <ColumnRight />

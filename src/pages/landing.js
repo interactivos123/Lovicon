@@ -1,5 +1,5 @@
 import React from 'react'
-import { SectionOne, SectionThree, SectionSix, SectionTwo, SectionFour, SectionFive } from '../components/compLanding'
+import { SectionOne, SectionThree, SectionSix, SectionTwo, SectionFour, SectionFive, SectionSeven } from '../components/compLanding'
 
 const Landing = () => {
   return (
@@ -10,6 +10,7 @@ const Landing = () => {
       <SectionFour />
       <SectionFive />
       <SectionSix />
+      <SectionSeven />
     </>
   )
 }
