@@ -102,6 +102,10 @@ export const SwiperContainer = styled(Swiper)({
   width: '100%',
   margin: '40px 0',
 
+  '& .swiper-wrapper': {
+    boxSizing: 'border-box'
+  },
+
   '& .swiper-slide': {
     width: 'calc(33.33% - 40px)',
     margin: '0 20px'
