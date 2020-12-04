@@ -1,9 +1,13 @@
 import React from 'react'
-import { SectionOne } from '../components/compLanding'
+import { SectionOne, SectionThree, SectionSix } from '../components/compLanding'
 
 const Landing = () => {
   return (
-    <SectionOne />
+    <>
+      <SectionOne />
+      <SectionThree />
+      <SectionSix />
+    </>
   )
 }
 
