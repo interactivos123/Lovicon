@@ -7,6 +7,7 @@ import { StyledSectionSix, Title, ContainerPlans, StyledPlan, ContainerBordePlan
 import { Link } from 'gatsby'
 import { useInput } from '../../../hooks/useInput'
 import { PopUp } from '../../generals/PopUp'
+import { AnchorLink } from 'gatsby-plugin-anchor-links'
 import { IconMessageSent } from '../../icons/IconMessageSent'
 const Plan = ({ children, Title, Price, Description }) => {
   return (
@@ -25,9 +26,11 @@ const Plan = ({ children, Title, Price, Description }) => {
       <Descripcion>
         {Description}
       </Descripcion>
-      <Button>
-        ADQUIRIR AHORA
-      </Button>
+      <AnchorLink to='/landing/#quiero-cotizar'>
+        <Button>
+          ADQUIRIR AHORA
+        </Button>
+      </AnchorLink>
     </StyledPlan>
   )
 }
@@ -106,13 +109,13 @@ const FormCotizar = () => {
           <FormControlLabel
             control={
               <Checkbox color='primary' required value={accept.value} onChange={accept.onChange} />
-          }
+            }
             margin='normal'
             label={
               <Typography color='primary'>
                 Acepto
               </Typography>
-          }
+            }
           />
           <ButtonForm>Enviar</ButtonForm>
         </Form>

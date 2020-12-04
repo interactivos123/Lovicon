@@ -72,8 +72,8 @@ export const ContainerPlans = styled(Swiper)({
 
   [theme.breakpoints.down('sm')]: {
     '& .swiper-slide': {
-      width: 'calc(100% - 120px)',
-      margin: '0 60px'
+      width: 'calc(100% - 20px)',
+      margin: '0 10px'
     }
   }
 })
@@ -95,7 +95,11 @@ export const TitlePlan = styled('h6')({
   margin: 0,
   fontSize: '22px',
   color: '#FFFFFF',
-  fontWeight: '500'
+  fontWeight: '500',
+
+  [theme.breakpoints.down('sm')]: {
+    left: '-20px'
+  }
 })
 
 export const ContainerBordePlan = styled('div')({
@@ -106,7 +110,12 @@ export const ContainerBordePlan = styled('div')({
   boxSizing: 'border-box',
   margin: '16px 0 0 40px',
   position: 'relative',
-  flexGrow: 1
+  flexGrow: 1,
+
+  [theme.breakpoints.down('sm')]: {
+    width: 'calc(100% - 20px)',
+    margin: '16px 0 0 20px'
+  }
 })
 
 export const ContainerPlan = styled('div')({
@@ -200,7 +209,11 @@ export const Form = styled('form')({
   flexDirection: 'column',
   backgroundColor: '#FFFFFF',
   borderRadius: '20px',
-  padding: '40px'
+  padding: '40px',
+
+  [theme.breakpoints.down('sm')]: {
+    padding: '40px 20px'
+  }
 })
 
 export const MyFormControl = styled(FormControl)({
