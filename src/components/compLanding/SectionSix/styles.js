@@ -72,8 +72,8 @@ export const ContainerPlans = styled(Swiper)({
 
   [theme.breakpoints.down('sm')]: {
     '& .swiper-slide': {
-      width: 'calc(100% - 20px)',
-      margin: '0 10px'
+      width: 'calc(100% - 45px)',
+      margin: '0 35px 0 10px'
     }
   }
 })

@@ -75,6 +75,14 @@ export const Title = styled('h1')({
     fontWeight: '500'
   },
 
+  '& span': {
+    display: 'block',
+    color: '#224FB4',
+    fontSize: '20px',
+    fontWeight: '300',
+    lineHeight: '1.5em'
+  },
+
   [theme.breakpoints.down('md')]: {
     fontSize: '40px',
     lineHeight: '56px',

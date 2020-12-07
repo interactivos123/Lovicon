@@ -19,6 +19,7 @@ const SectionOne = () => {
             </ContainerLogo>
             <Title>
               EL <b>86%</b> DE LAS <b>VENTAS</b> DE LOS COMERCIOS SIGUEN REALIZANDOSE EN LA <b>TIENDA FÍSICA</b>
+              <span>*ESADE</span>
             </Title>
             <CallToAction>
               <AnchorLink to='/landing/#construir-tienda'>

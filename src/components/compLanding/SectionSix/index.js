@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { TextField, FormControlLabel, Checkbox, Typography } from '@material-ui/core'
 import { SwiperSlide } from 'swiper/react'
+import SwiperCore, { Navigation } from 'swiper'
 import SwiperStyles from 'swiper/swiper-bundle.min.css'
 import { ContenedorPadre } from '../../../theme'
 import { StyledSectionSix, Title, ContainerPlans, StyledPlan, ContainerBordePlan, ContainerPlan, ContainerListPlan, TitlePlan, ListItem, Precio, Descripcion, Button, ContainerForm, Anchor, Form, MyFormControl, TextPrivacyPolicy, ButtonForm, TitleForm, ContainerMessageSent, TextSent } from './styles'
@@ -9,6 +10,9 @@ import { useInput } from '../../../hooks/useInput'
 import { PopUp } from '../../generals/PopUp'
 import { AnchorLink } from 'gatsby-plugin-anchor-links'
 import { IconMessageSent } from '../../icons/IconMessageSent'
+
+SwiperCore.use([Navigation])
+
 const Plan = ({ children, Title, Price, Description }) => {
   return (
     <StyledPlan>
@@ -54,6 +58,7 @@ const FormCotizar = () => {
   const company = useInput('')
   const phone = useInput('')
   const email = useInput('')
+  const cargo = useInput('')
   const country = useInput('')
   const help = useInput('')
   const accept = useInput('')
@@ -95,6 +100,7 @@ const FormCotizar = () => {
           <TextField id='name' label='Nombre' name='Nombre' variant='outlined' margin='normal' required value={name.value} onChange={name.onChange} />
           <TextField id='lastName' label='Apellidos' name='Apellidos' variant='outlined' margin='normal' required value={lastName.value} onChange={lastName.onChange} />
           <TextField id='company' label='Nombre de la empresa' name='Nombre de la empresa' variant='outlined' margin='normal' required value={company.value} onChange={company.onChange} />
+          <TextField id='company' label='Cargo' name='Cargo' variant='outlined' margin='normal' required value={cargo.value} onChange={cargo.onChange} />
           <TextField id='phone' label='Teléfono' name='Teléfono' variant='outlined' margin='normal' required value={phone.value} onChange={phone.onChange} />
           <TextField type='email' id='email' label='Correo electrónico' name='Correo electrónico' variant='outlined' margin='normal' required value={email.value} onChange={email.onChange} />
           <TextField id='country' label='País o región' name='País o región' variant='outlined' margin='normal' required value={country.value} onChange={country.onChange} />
@@ -145,6 +151,7 @@ const SectionSix = () => {
         <Title color='#363131'>Un plan para cada etapa de su marca</Title>
         <ContainerPlans
           spaceBetween={0}
+          navigation
           slidesPerView='auto'
           className={SwiperStyles}
         >
