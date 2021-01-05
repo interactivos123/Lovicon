@@ -18,12 +18,12 @@ const SectionOne = () => {
               </Link>
             </ContainerLogo>
             <Title>
-              EL <b>86%</b> DE LAS <b>VENTAS</b> DE LOS COMERCIOS SIGUEN REALIZANDOSE EN LA <b>TIENDA FÍSICA</b>
-              <span>*ESADE</span>
+              CONSTRUIMOS TIENDAS <b>FLEXIBLES</b> Y <b>ADAPTABLES</b>.
+              <strong>OPTIMIZADAS A LOS NUEVOS HÁBITOS  DE COMPRA</strong>
             </Title>
             <CallToAction>
               <AnchorLink to='/landing/#construir-tienda'>
-                Construya <br /> su tienda ahora
+                Quiero cotizar
               </AnchorLink>
               <AnchorLink to='/landing/#construir-tienda'>
                 <SwipeDown />
@@ -34,7 +34,7 @@ const SectionOne = () => {
         </Container>
       </ContenedorPadre>
       <ContainerBackgroundImage>
-        <Image name='ImageSectionOneLanding.jpg' />
+        <Image name='1.jpg' />
       </ContainerBackgroundImage>
     </StyledSectionOne>
   )

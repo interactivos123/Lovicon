@@ -66,15 +66,20 @@ export const ContainerLogo = styled('div')({
 export const Title = styled('h1')({
   color: '#5C5C5C',
   width: '100%',
-  fontSize: '36px',
-  fontWeight: '500',
+  fontSize: '34px',
+  fontWeight: '600',
   lineHeight: '48px',
 
   '& b': {
     color: '#224FB4',
-    fontWeight: '500'
+    fontWeight: '600'
   },
-
+  '& strong': {
+    fontSize: '26px',
+    lineHeight: '40px',
+    display: 'block',
+    maxWidth: '400px'
+  },
   '& span': {
     display: 'block',
     color: '#224FB4',
@@ -84,7 +89,7 @@ export const Title = styled('h1')({
   },
 
   [theme.breakpoints.down('md')]: {
-    fontSize: '40px',
+    fontSize: '34px',
     lineHeight: '56px',
     zIndex: 2,
     backgroundColor: '#fff',
@@ -95,8 +100,16 @@ export const Title = styled('h1')({
   },
 
   [theme.breakpoints.down('sm')]: {
-    fontSize: '28px',
-    lineHeight: '40px'
+    fontSize: '26px',
+    lineHeight: '36px',
+    '& strong': {
+      fontSize: '20px',
+      lineHeight: '30px',
+      maxWidth: '320px'
+    },
+    '& span': {
+      fontSize: '18px'
+    }
   }
 })
 
@@ -109,7 +122,8 @@ export const CallToAction = styled('div')({
 
   '& a': {
     color: '#224FB4',
-    textDecoration: 'none'
+    textDecoration: 'none',
+    fontWeight: '600'
   },
 
   '& svg': {
